@@ -34,6 +34,8 @@ The candidate generation step provides broad personalization via collaborative f
 
 - When inputting continuous variables, we need to normalize them and also input several powers of the input (x^2, sqrt(x)), "giving the network more expressive power by allowing it to easily form super- and sub-linear functions of the feature."
 
+- Increasing width and depth of hidden layers helps but the trade=off is the CPU time needed. 
+
 ### Unique Points:
 
 - Offline measures such as precision, recall, ranking loss, etc. provide very different results compared to live metrics such as A/B testing. 
