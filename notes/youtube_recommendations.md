@@ -23,6 +23,8 @@ TLDR;
 
 Classic two-stage information retrieval dichotomy: deep candidate generation model and then a separate deep ranking model.
 
+![two-stage information retrieval dichotomy](images/youtube_general.png)
+
 Videos corpus --> candidate videos generation --> rank the videos --> display recommendations
 
 candidate generation: input is user's activity history and output is a small subset (100s) of videos from a large corpus. 
