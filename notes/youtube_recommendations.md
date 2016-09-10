@@ -2,12 +2,12 @@
 
 TLDR; 
 
-#### Key Points:
+### Key Points:
 
 - 
 -
 
-#### Detailed Notes:
+### Detailed Notes:
 
 Classic two-stage information retrieval dichotomy: deep candidate generation model and then a separate deep ranking model.
 
@@ -17,7 +17,7 @@ Classic two-stage information retrieval dichotomy: deep candidate generation mod
 Videos corpus --> candidate videos generation --> rank the videos --> display recommendations
 
 
-##### Candidate Generation:
+#### Candidate Generation:
 Input is user's activity history and output is a small subset (100s) of videos from a large corpus. 
 The candidate generation step provides broad personalization via collaborative filtering. Some of the features to compare with others users are videos watched, search queries, and demographics. 
 
@@ -34,7 +34,7 @@ All the videos and search tokens were embedded with 256 floats each in a maximum
 ![Specific structure](images/youtube/youtube_layers.png)
 
 
-#### Unique Points:
+### Unique Points:
 
 - Offline measures such as precision, recall, ranking loss, etc. provide very different results compared to live metrics such as A/B testing. 
 
