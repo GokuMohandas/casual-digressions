@@ -18,7 +18,7 @@ where:
 
  - As you can see, the softmax formulation is not feasible because the cost of computing the denominator is proportional to W. A solution is noise contrastive estimation (NCE) but a simple approach is negative sampling which is just using a small subset sample for the denominator. 
 
-- Tp decide how to subsample, we use the probability discard formula below. t is usually 10^-5. and f is the frequency of the word. Frequency is occurances of word / all occurances of every word, so a high frequency word will have a high value P, which is the discard probability. (discard from subsampling). We dont want to subsample the high frequency words because their embeddings don't change much because they are always used with almost every word. 
+- To decide how to subsample, we use the probability discard formula below. t is usually 10^-5. and f is the frequency of the word. Frequency is occurances of word / all occurances of every word, so a high frequency word will have a high value P, which is the discard probability. (discard from subsampling). We dont want to subsample the high frequency words because their embeddings don't change much because they are always used with almost every word. 
 
 ![Subsampling] (images/word2vec/subsampling.png)
 
