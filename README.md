@@ -13,4 +13,4 @@
 
 ### Text Classification
 
- - [Convolutional Neural Networks for Sentence Classification] (notes/cnn_text.md) [arXiv] (http://arxiv.org/abs/1408.5882)
+ - [Convolutional Neural Networks for Sentence Classification] (notes/cnn_text.md) [[arXiv] (http://arxiv.org/abs/1408.5882)]
