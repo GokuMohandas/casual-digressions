@@ -11,6 +11,8 @@
 
 - Multi-layer Representation Learning for Medical Concepts [[arXiv] (https://arxiv.org/abs/1602.05568)]
 
-### Text Classification
+#### Text Classification
 
  - [Convolutional Neural Networks for Sentence Classification] (notes/cnn_text.md) [[arXiv] (http://arxiv.org/abs/1408.5882)]
+ 
+ - [Sequence to Sequence Learning with Neural Networks] (notes/seq_to_seq_rnn) [[arXiv] (https://arxiv.org/pdf/1409.3215v3.pdf)]
