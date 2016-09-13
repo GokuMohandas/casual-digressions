@@ -6,11 +6,11 @@ TLDR; Sequence-to-sequence models for language translation involves use of two L
 
 - Two LSTMs: one for input sequence and another for output each with 4 layers. The first encodes the input language and outputs a fixed dimensional output v made form embeddings of the input. The v is fed into another LSTM to output the predicted translated sentence.
 
-![Model](images/seq_to_seq_rnn/model.png]
+![Model](images/seq_to_seq_rnn/model.png)
 
 - Since the inputs are a,b,c to generate d,e,f, if see that the c gets read first. Therefore, we feed our input in reverse order. This way a is the last input and d (which corresponds to a) is the first output. This proximity "establishes communication" between the input and output better. Of course, we only have this proximity up to the halfway point and then it's same feeding it the normal way, but this reduces the time lag by a bit. This greatly boosted performance as well. 
 
-![Objective](images/seq_to_seq_rnn/objective.png]
+![Objective](images/seq_to_seq_rnn/objective.png)
 
 - When predicted each word, we will use [beam search](https://www.youtube.com/watch?v=UXW6Cs82UKo). Even beam of 1 (greedy) is good enough but best results come from beam of size 2. In case your forgot, this means sampling multiple times and then after each sample prune and keep just 2 of the highest product of probabilities (see video for more details).
 
