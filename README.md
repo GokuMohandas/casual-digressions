@@ -15,4 +15,4 @@
 
  - [Convolutional Neural Networks for Sentence Classification] (notes/cnn_text.md) [[arXiv] (http://arxiv.org/abs/1408.5882)]
  
- - [Sequence to Sequence Learning with Neural Networks] (notes/seq_to_seq_rnn) [[arXiv] (https://arxiv.org/pdf/1409.3215v3.pdf)]
+ - [Sequence to Sequence Learning with Neural Networks] (notes/seq_to_seq_rnn.md) [[arXiv] (https://arxiv.org/pdf/1409.3215v3.pdf)]
