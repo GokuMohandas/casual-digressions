@@ -15,4 +15,8 @@
 
  - [Convolutional Neural Networks for Sentence Classification] (notes/cnn_text.md) [[arXiv] (http://arxiv.org/abs/1408.5882)]
  
- - [Sequence to Sequence Learning with Neural Networks] (notes/seq_to_seq_rnn.md) [[arXiv] (https://arxiv.org/pdf/1409.3215v3.pdf)]
+ - [Sequence to Sequence Learning with Neural Networks] (notes/seq_to_seq_rnn.md) [[arXiv] (https://arxiv.org/abs/1409.3215)]
+ 
+ - Recurrent Neural Network Regularization [[arXiv] (http://arxiv.org/abs/1409.2329)]
+ 
+ - [Grammar as a Foreign Language] [[arXiv] (http://arxiv.org/abs/1412.7449)]
