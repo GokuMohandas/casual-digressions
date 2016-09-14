@@ -27,5 +27,6 @@
  
 - [Neural Machine Translation by Jointly Learning to Align and Translate] (notes/rnn_attention.md) [[arXiv] (http://arxiv.org/abs/1409.0473)] - Attention in RNNs
  
+- [Neural Machine Translation by Jointly Learning to Align and Translate] (notes/rnn_attention.md) [[arXiv] (http://arxiv.org/abs/1409.0473)] - Attention in RNNs
  
- 
+- [On Using Very Large Target Vocabulary for Neural Machine Translation] (notes/rnn_softmax.md) [[arXiv] (http://arxiv.org/abs/1412.2007)] - Sampled Softmax 
