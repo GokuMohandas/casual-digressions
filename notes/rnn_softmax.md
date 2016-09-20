@@ -9,5 +9,3 @@ TLDR; When computing the softmax of the output from our decoder, the denominator
 2.) We will define our subset V' by looking at each training subsequence input and collecting words into V' until a threshold amount is met. The proposal distribution is different for each training subsequence and if defined by each training subsequence's subset V'. 
 
 ![softmax] (images/rnn_softmax/softmax.png)
-
-

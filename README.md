@@ -5,7 +5,7 @@
 
 #### Representation Learning
 
-- Doctor AI: Predicting Clinical Events via Recurrent Neural Networks [[arXiv] (http://arxiv.org/abs/1511.05942)]
+- [Doctor AI: Predicting Clinical Events via Recurrent Neural Networks] (notes/docai.md) [[arXiv] (http://arxiv.org/abs/1511.05942)]
 
 - [Distributed Representations of Words and Phrases and their Compositionality] (notes/word2vec_mikolov.md) [[NIPS] (https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)]
 
@@ -28,3 +28,14 @@
 - [Neural Machine Translation by Jointly Learning to Align and Translate] (notes/rnn_attention.md) [[arXiv] (http://arxiv.org/abs/1409.0473)] - Attention in RNNs
  
 - [On Using Very Large Target Vocabulary for Neural Machine Translation] (notes/rnn_softmax.md) [[arXiv] (http://arxiv.org/abs/1412.2007)] - Sampled Softmax 
+
+#### Reinforcement Learning
+
+- [Episodic Exploration for Deep Deterministic Policies: An Application to StarCraft Micromanagement Tasks] (http://arxiv.org/abs/1609.02993)
+
+#### Google DeepMind
+
+- [WaveNet: A Generative Model for Raw Audio] () [arXiv] (https://arxiv.org/abs/1609.03499) [Tutorial] (https://deepmind.com/blog/wavenet-generative-model-raw-audio/)
+
+- [Decoupled Neural Interfaces using Synthetic Gradients] () [arXiv] (https://arxiv.org/abs/1608.05343) [Tutorial] (https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/)
+
