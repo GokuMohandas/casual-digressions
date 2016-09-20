@@ -31,11 +31,11 @@
 
 #### Reinforcement Learning
 
-- [Episodic Exploration for Deep Deterministic Policies: An Application to StarCraft Micromanagement Tasks] (http://arxiv.org/abs/1609.02993)
+- Episodic Exploration for Deep Deterministic Policies: An Application to StarCraft Micromanagement Tasks [[arXiv] (http://arxiv.org/abs/1609.02993)]
 
 #### Google DeepMind
 
-- [WaveNet: A Generative Model for Raw Audio] () [arXiv] (https://arxiv.org/abs/1609.03499) [Tutorial] (https://deepmind.com/blog/wavenet-generative-model-raw-audio/)
+- WaveNet: A Generative Model for Raw Audio [[arXiv] (https://arxiv.org/abs/1609.03499)][[Tutorial] (https://deepmind.com/blog/wavenet-generative-model-raw-audio/)]
 
-- [Decoupled Neural Interfaces using Synthetic Gradients] () [arXiv] (https://arxiv.org/abs/1608.05343) [Tutorial] (https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/)
+- Decoupled Neural Interfaces using Synthetic Gradients [[arXiv] (https://arxiv.org/abs/1608.05343)] [[Tutorial] (https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/)]
 
