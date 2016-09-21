@@ -29,6 +29,10 @@
  
 - [On Using Very Large Target Vocabulary for Neural Machine Translation] (notes/rnn_softmax.md) [[arXiv] (http://arxiv.org/abs/1412.2007)] - Sampled Softmax 
 
+#### Neural Conversation Models
+
+ - [A Neural Conversational Model] (notes/conversation.md) [[arXiv] (http://arxiv.org/abs/1506.05869)]
+
 #### Reinforcement Learning
 
 - Episodic Exploration for Deep Deterministic Policies: An Application to StarCraft Micromanagement Tasks [[arXiv] (http://arxiv.org/abs/1609.02993)]
