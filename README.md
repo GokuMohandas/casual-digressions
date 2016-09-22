@@ -43,3 +43,7 @@
 
 - Decoupled Neural Interfaces using Synthetic Gradients [[arXiv] (https://arxiv.org/abs/1608.05343)] [[Tutorial] (https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/)]
 
+#### Neural Turing Machines
+
+- [Neural Turing Machines] (notes/turing) [[arXiv] (http://arxiv.org/abs/1410.5401)]
+
