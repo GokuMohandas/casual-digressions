@@ -6,4 +6,6 @@ Essentially an architecture with a controller (FNN, RNN, LSTM) that has read/wri
 
 When reading and writing to the memory matrix, introspective attention is used. Separate attention weights for reading, erasing and writing. All of this is end-to-end differentiable, so theoretically we can learn very complex tasks. 
 
+![model] (images/ntm/model.png)
+
 

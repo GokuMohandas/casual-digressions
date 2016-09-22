@@ -45,5 +45,5 @@
 
 #### Neural Turing Machines
 
-- [Neural Turing Machines] (notes/turing) [[arXiv] (http://arxiv.org/abs/1410.5401)]
+- [Neural Turing Machines] (notes/ntm.md) [[arXiv] (http://arxiv.org/abs/1410.5401)]
 
