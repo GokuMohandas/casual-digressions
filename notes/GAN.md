@@ -26,7 +26,7 @@ TLDR; Simultaneously training two models; generative model G that captures the d
 
 ![algo](images/GAN/algo.png)
 
-- NOTE: ASCEND stochastic gradient for D and DESCENT stochastic gradient for G. 
+- NOTE: ASCEND (maximize) stochastic gradient for D and DESCEND (minimize) stochastic gradient for G. 
 
 - The optimal value for D is 1/2, which means it can't distinguish between X and G(z).
 
