@@ -10,6 +10,7 @@ TLDR; Simultaneously training two models; generative model G that captures the d
 - The feed into G, is a randomized noise matrix which has the same dimensions as our input data X. We will never input X into G, G can only learn through the gradients from D. D gets half of the samples from G and other half from X. 
 
 - plot of ln(1-x)
+
 ![plot](images/GAN/plot.png)
 
 - minimax objective:

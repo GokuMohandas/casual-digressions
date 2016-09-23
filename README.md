@@ -48,5 +48,5 @@
 - [Neural Turing Machines] (notes/ntm.md) [[arXiv] (http://arxiv.org/abs/1410.5401)]
 
 #### Generative Adversarial Networks
-= [Generative Adversarial Networks] (notes/GAN.md) [[arXiv] (https://arxiv.org/abs/1406.2661)]
+- [Generative Adversarial Networks] (notes/GAN.md) [[arXiv] (https://arxiv.org/abs/1406.2661)]
 
