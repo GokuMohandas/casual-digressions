@@ -50,3 +50,8 @@
 #### Generative Adversarial Networks
 - [Generative Adversarial Networks] (notes/GAN.md) [[arXiv] (https://arxiv.org/abs/1406.2661)]
 
+-  [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](notes/dcgan.md) [[arXiv](http://arxiv.org/abs/1511.06434v2)]
+
+#### Image Captioning
+
+- [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](notes/show_attend_tell.md) [[arXiv](https://arxiv.org/abs/1502.03044)]
