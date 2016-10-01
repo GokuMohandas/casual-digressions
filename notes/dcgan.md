@@ -33,7 +33,7 @@ Traditional GAN:
 
 - no more full connected layers after the CNN. A random noise z is fed into G (which is basically an FC network) and the output is reshaped in the 4D tensor and fed into the discriminator. In the discriminator, the last conv layer is flatted and fed in to a sigmoid unit for prediction. 
 
-![upsample] (images/dcgam/upsample.png)
+![upsample] (images/dcgan/upsample.png)
 
 - Batch norm used to improve poor weights initialization and gradient flow (recall that batch norm gives zero mean and unit variance to all the inputs of a layer). In order to prevent model instabilty which arises if we aply batch norm to all the layers, batch norm was only used at the output layer of the generator and the input layer of the discriminator. 
 
