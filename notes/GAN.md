@@ -4,6 +4,8 @@ UPDATE: Code for GAN will be here or in the Neural Perspective repo
 
 TLDR; Simultaneously training two models; generative model G that captures the data distribution well and a discriminative model D that tries to predict wether sample came from training data or G. Objective of G is to trick D, therefore making it's goal to learn the training data distribution really well. And objective of D is to get 1/2 score (perfectly predict training data and samples from G). 
 
+![architecture.png](images/GAN/architecture.png)
+
 ### Detailed Notes:
 - Both generative model G and discriminative model D are MLPs. D is always the probability that a particular sample is from the training data. 
 
