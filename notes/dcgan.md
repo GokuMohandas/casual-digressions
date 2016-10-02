@@ -11,7 +11,7 @@ Traditional GAN:
 
 - The generator is fed z (a 100 dimensional uniform vector) and goes through upsamling to eventually generate an image which will then be fed into the discriminator. More details on upsampling implementation below Training Points section.
 
-![upsample] (images/dcgam/upsample.png)
+![upsample] (images/dcgan/upsample.png)
 
 - What is being learned here are the filters in the upsampling process which are used to process the low dimensional z into the higher dimensional image. 
 
