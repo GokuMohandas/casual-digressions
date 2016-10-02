@@ -2,7 +2,7 @@
 
 TLDR; Caption captioning with a CNN and a RNN. Instead of feeding a static input into the RNN (static input is the final layer prior to softmax in the CNN that represents the input image as a vector). We now feed in the image with attention where the RNN can decide, at each time step to generate the word, which parts of the image to focus on.
 
-![model](images/show_attend_tell/images/model.png)
+![model](images/show_attend_tell/model.png)
 
 ### Detailed Notes:
 
