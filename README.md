@@ -29,7 +29,7 @@
  
 - [On Using Very Large Target Vocabulary for Neural Machine Translation] (notes/rnn_softmax.md) [[arXiv] (http://arxiv.org/abs/1412.2007)] - Sampled Softmax 
 
-- [Pointer Sentinel Mixture Models] (notes/pointer_sentinal.md) [[arXiv](https://arxiv.org/abs/1609.07843)]
+- [Pointer Sentinel Mixture Models] (notes/pointer_sentinel.md) [[arXiv](https://arxiv.org/abs/1609.07843)]
 
 #### Neural Conversation Models
 
