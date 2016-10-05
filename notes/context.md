@@ -23,6 +23,8 @@ TLDR; Word embeddings store a lot of information about each word. When trying to
 	
 - The masking involves using an element wise sigmoid operation that produces a float between [0,1] which we multiply by the original embeddings. 
 
+![context](images/context/context.png)
+
 ### Training Points:
 
 - Same RNN with attention structure as Bahdanau's 2015 (bidirectional RNN, soft attention, etc.) except this paper used LSTMs instead of GRUs and used the Adam optimizer with gradient clipping instead of adadelta. 
