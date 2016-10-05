@@ -31,6 +31,8 @@
 
 - [Pointer Sentinel Mixture Models] (notes/pointer_sentinel.md) [[arXiv](https://arxiv.org/abs/1609.07843)]
 
+- [Context-Dependent Word Representation for Neural Machine Translation] (notes/context.md) [[arXiv](https://arxiv.org/abs/1607.00578)]
+
 #### Neural Conversation Models
 
  - [A Neural Conversational Model] (notes/conversation.md) [[arXiv] (http://arxiv.org/abs/1506.05869)]
