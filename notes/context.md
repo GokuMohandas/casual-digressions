@@ -23,6 +23,8 @@ TLDR; Word embeddings store a lot of information about each word. When trying to
 	
 - The masking involves using an element wise sigmoid operation that produces a float between [0,1] which we multiply by the original embeddings. 
 
+- Also notice that the decoder's embedding also uses the same context, even though context is average of nonlinearities from input embeddings. This is because we wish to learn the context from the input (source) language and use that for generating the output. 
+
 ![context](images/context/context.png)
 
 ### Training Points:
