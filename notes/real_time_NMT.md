@@ -22,6 +22,8 @@ TLDR; An implementation of realtime neural machine translation (NMT) by using an
 
 - As for the RL agent, we will be using a stochastic policy parametrized by an RNN in order to decide when to READ/WRITE. I'll be coding out my own version for this part that will produce similar results (ish).
 
+![eq3](images/real_time_NMT/eq3.png)
+
 - The details of the RL component are described in the paper but I won't expand on them here and again in the code. 
 
 - Picking the best translation sequence was done by using simultaneous beam search. This is an extension of the traditional beam search, where at each step, we don't just keep the argmax but may keep the top few predicted tokens. We do this at each step and multiple the probabilities for each token along the way. This is a great way to recover after a fatal initial prediction error. But, this method can also grow quickly (computationally expensive) so we restrict to k trajectories at any particular time.
