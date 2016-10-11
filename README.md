@@ -33,6 +33,8 @@
 
 - [Context-Dependent Word Representation for Neural Machine Translation] (notes/context.md) [[arXiv](https://arxiv.org/abs/1607.00578)]
 
+- [Learning to Translate in Real-time with Neural Machine Translation] (notes/real_time_NMT.md) [[arXiv](https://arxiv.org/abs/1610.00388)]
+
 #### Neural Conversation Models
 
  - [A Neural Conversational Model] (notes/conversation.md) [[arXiv] (http://arxiv.org/abs/1506.05869)]
