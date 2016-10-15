@@ -35,6 +35,8 @@
 
 - [Learning to Translate in Real-time with Neural Machine Translation] (notes/real_time_NMT.md) [[arXiv](https://arxiv.org/abs/1610.00388)]
 
+- [Fully Character-Level Neural Machine Translation without Explicit Segmentation] (notes/fully_char.md) [[arXiv](https://arxiv.org/abs/1610.03017)]
+
 #### Neural Conversation Models
 
  - [A Neural Conversational Model] (notes/conversation.md) [[arXiv] (http://arxiv.org/abs/1506.05869)]

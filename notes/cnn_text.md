@@ -1,4 +1,4 @@
-## [Convolutional Neural Networks for Sentence Classification](http://arxiv.org/abs/1408.5882)
+## - [Fully Character-Level Neural Machine Translation without Explicit Segmentation] (https://arxiv.org/abs/1610.03017)
 
 TLDR; 
 
