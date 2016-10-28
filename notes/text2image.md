@@ -16,6 +16,7 @@ Our loss is based on 0/1 loss which gives 0 if our prediction is correct and 1 i
 
 ### DCGAN:
 Both G and D are conditioned on text features.
+
 ![dcgan](images/text2image/dcgan.png)
 
 ### Generator:
