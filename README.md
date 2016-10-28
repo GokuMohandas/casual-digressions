@@ -60,6 +60,8 @@
 
 -  [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](notes/dcgan.md) [[arXiv](http://arxiv.org/abs/1511.06434v2)]
 
+- [Generative Adversarial Text to Image Synthesis](notes/text2image.md)[[arXiv](https://arxiv.org/abs/1605.05396)]
+
 #### Image Captioning
 
 - [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](notes/show_attend_tell.md) [[arXiv](https://arxiv.org/abs/1502.03044)]
