@@ -66,6 +66,8 @@
 
 - [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](notes/show_attend_tell.md) [[arXiv](https://arxiv.org/abs/1502.03044)]
 
-#### Hypernetworks
+#### Architecture
 
 - [HyperNetworks] (notes/hypernetworks.md) [[arXiv] (https://arxiv.org/abs/1609.09106)]
+
+- [Using Fast Weights to Attend to the Recent Past] (notes/fast_weights.md) [[arXiv] (https://arxiv.org/abs/1610.06258)]
