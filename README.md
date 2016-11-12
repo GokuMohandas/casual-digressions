@@ -60,9 +60,9 @@
 
 -  [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](notes/dcgan.md) [[arXiv](http://arxiv.org/abs/1511.06434v2)]
 
-- [Generative Adversarial Text to Image Synthesis](notes/text2image.md)[[arXiv](https://arxiv.org/abs/1605.05396)]
+- [Generative Adversarial Text to Image Synthesis](notes/text2image.md) [[arXiv] (https://arxiv.org/abs/1605.05396)]
 
-- [Improved Techniques for Training GANs](notes/improved_gan.md)[[arXiv](https://arxiv.org/abs/1606.03498)]
+- [Improved Techniques for Training GANs](notes/improved_gan.md) [[arXiv] (https://arxiv.org/abs/1606.03498)]
 
 #### Image Captioning
 

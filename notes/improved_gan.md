@@ -1,6 +1,6 @@
 ## - [Improved Techniques for Training GANs] (https://arxiv.org/abs/1606.03498)
 
-TLDR; Many techniques to help when training GANs. The main issue is the objective of convergence. Traditionally we use gradient descent but this doesn't always converge to the optimal point because we have a mini-max game where the objective for G and D are not the same.
+TLDR; Many techniques to help when training GANs. The main issue is the objective of convergence. Traditionally we use gradient descent but this doesn't always converge to the optimal point because we have a mini-max game where the objective for G and D are not the same. This paper has some improved techniques that benefit from taking into account things like intermediate activation outputs from D and using entire batches' features when determining probability that an X is from training set in D.
 
 ### Detailed Notes:
 
