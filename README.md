@@ -62,7 +62,7 @@
 
 - [Generative Adversarial Text to Image Synthesis](notes/text2image.md)[[arXiv](https://arxiv.org/abs/1605.05396)]
 
-- [Improved Techniques for Training GANs] (notes/improved_gan.md)[[arXiv](https://arxiv.org/abs/1606.03498)]
+- [Improved Techniques for Training GANs](notes/improved_gan.md)[[arXiv](https://arxiv.org/abs/1606.03498)]
 
 #### Image Captioning
 
