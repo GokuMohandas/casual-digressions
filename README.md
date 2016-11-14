@@ -37,13 +37,19 @@
 
 - [Fully Character-Level Neural Machine Translation without Explicit Segmentation] (notes/fully_char.md) [[arXiv](https://arxiv.org/abs/1610.03017)]
 
-#### Neural Conversation Models
+#### Neural Conversation Models / QA
 
  - [A Neural Conversational Model] (notes/conversation.md) [[arXiv] (http://arxiv.org/abs/1506.05869)]
+ 
+ - End-To-End Memory Networks [[arXiv](https://arxiv.org/abs/1503.08895)]
+ 
+ - Dynamic Coattention Networks For Question Answering [[arXiv](https://arxiv.org/abs/1611.01604)]
 
 #### Reinforcement Learning
 
 - Episodic Exploration for Deep Deterministic Policies: An Application to StarCraft Micromanagement Tasks [[arXiv] (http://arxiv.org/abs/1609.02993)]
+
+- Third Person Imitation Learning [[arXiv](http://openreview.net/pdf?id=B16dGcqlx)]
 
 #### Google DeepMind
 
@@ -64,6 +70,8 @@
 
 - [Improved Techniques for Training GANs](notes/improved_gan.md) [[arXiv] (https://arxiv.org/abs/1606.03498)]
 
+- [Learning to Protect Communications with Adversarial Neural Cryptography](notes/crypto_gan.md) [[arXiv](https://arxiv.org/abs/1610.06918)]
+
 #### Image Captioning
 
 - [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](notes/show_attend_tell.md) [[arXiv](https://arxiv.org/abs/1502.03044)]
@@ -73,3 +81,5 @@
 - [HyperNetworks] (notes/hypernetworks.md) [[arXiv] (https://arxiv.org/abs/1609.09106)]
 
 - [Using Fast Weights to Attend to the Recent Past] (notes/fast_weights.md) [[arXiv] (https://arxiv.org/abs/1610.06258)]
+
+- Quasi-Recurrent Neural Networks [[arXiv] (https://arxiv.org/abs/1611.01576)]
