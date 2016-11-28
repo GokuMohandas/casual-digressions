@@ -45,7 +45,7 @@
  
 - [Ask Me Anything: Dynamic Memory Networks for Natural Language Processing] (notes/ama.md) [[arXiv](https://arxiv.org/abs/1506.07285)]
  
- - [Dynamic Coattention Networks For Question Answering] (notes/coattention.md) [[arXiv](https://arxiv.org/abs/1611.01604)]
+- [Dynamic Coattention Networks For Question Answering] (notes/coattention.md) [[arXiv](https://arxiv.org/abs/1611.01604)]
 
 #### Reinforcement Learning
 
