@@ -43,9 +43,9 @@
  
  - End-To-End Memory Networks [[arXiv](https://arxiv.org/abs/1503.08895)]
  
-- Ask Me Anything: Dynamic Memory Networks for Natural Language Processing (notes/ama.md) [[arXiv](https://arxiv.org/abs/1506.07285)]
+- [Ask Me Anything: Dynamic Memory Networks for Natural Language Processing] (notes/ama.md) [[arXiv](https://arxiv.org/abs/1506.07285)]
  
- - Dynamic Coattention Networks For Question Answering [[arXiv](https://arxiv.org/abs/1611.01604)]
+ - [Dynamic Coattention Networks For Question Answering] [[arXiv](https://arxiv.org/abs/1611.01604)]
 
 #### Reinforcement Learning
 
