@@ -78,7 +78,7 @@
 
 - [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](notes/show_attend_tell.md) [[arXiv](https://arxiv.org/abs/1502.03044)]
 
-#### Architecture
+#### Optimization/Architecture
 
 - [HyperNetworks] (notes/hypernetworks.md) [[arXiv] (https://arxiv.org/abs/1609.09106)]
 
