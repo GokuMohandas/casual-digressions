@@ -33,8 +33,27 @@ TLDR; A model for textual and visual Q&A. The architecture employs unique attent
 
 ![diagram2](images/visual_qa/diagram2.png)
 
+#### Question Module:
 
+- Now we will compute a vector representation q for our question, which is simply just the final hidden state from a GRU where we feed in the words in the question.
 
+#### Episodic Memory Module:
+
+- So far we have used the input module to develop a representation of the input information such that we intelligently use the past and future parts of the input. And we are able to capture the pertinent sentences in the input that may later pan out to be useful connections for answering the question. We have also created a representation vector q for our question. Now, we will use an episodic memory module to retrieve the information from the input that is necessary to answer the question.
+
+- We pass through our input facts from the input module multiple times (episodes) because we capture pertinent information at each pass (esp. for transitive reasoning questions). Each pass we are able to identify the information we need for the question at better precision. 
+
+![eq5](images/visual_qa/eq5.png)
+
+- The episodic memory module has two components: attention mechanism and memory update mechanism. The attention mechanism results in a context vector c (dim H) that offers relevant information of the input at pass t. The inputs are the input facts F, question vector q and the previous memory m^{t-1}. Then the memory update mechanism uses the context vector c and the previous memory m^{t-1} to create m^t. The final pass T will result in memory m^T which has all the information needed to answer question q. We will now take a closer look at the attention mechanism and the memory update mechanism.
+
+##### Attention Mechanism
+
+- The attention mechanism uses the results from input module to result in a scalar attention gate value g_{i}^{t} for each fact f_{i} in facts F. So the scalar value is like the percentage importance that we will give a particular fact f at pass t (exactly like NMT soft attention).
+
+![eq6](images/visual_qa/eq6.png)
+
+##### Memory Update Mechanism
 
 ### Training Points:
 
