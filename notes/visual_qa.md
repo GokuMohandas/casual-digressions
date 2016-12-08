@@ -23,7 +23,7 @@ TLDR; A model for textual and visual Q&A. The architecture employs unique attent
 
 - We could've also just encoded each sentence via a GRU/LSTM, but these were found to overfit compared to the positional encoder. The positional encoder gives us an output f to feed into the input fusion layer (bidirectional GRUs). The value f is determined by the following:
 
-![eq3](images/visual_qa/eq3.png)
+![eq3](images/visual_qa/eq_3.png)
 
 - The input fusion layer takes these input facts f and processed them with the bidreictional GRU. We have now solved our two initial issues. By representing each sentence as a fact f, we avoid the distance issue of embedding word by word. And now the bidirectional GRU allows us to process facts before and after for each fact. This allows us to have contextual information from the input that accounts for past and future events. 
 
