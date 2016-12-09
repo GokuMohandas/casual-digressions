@@ -1,5 +1,7 @@
 ## - [Dynamic Memory Networks for Visual and Textual Question Answering] (https://arxiv.org/abs/1603.01417)
 
+Note: I will be uploading my code for the DMN+ from this paper in the tutorials section. I will also use Socher's coattention model to further increase the accuracy on the textual questions from the babI-10K dataset.
+
 TLDR; A model for textual and visual Q&A. The architecture employs unique attention layers that maintain sequential order unlike soft attention in many seq-to-seq tasks (ex. NMT). The Deep Memory Network+ (DMN+) in this paper out performs the DMN from Kumar et. al. The architecture still involves the use of an episodic memory module but this time, we are able to achieve better performance without explicitly labeling the parts of the input that are helpful for answering a question. 
 
 ### Detailed Notes:
@@ -53,16 +55,41 @@ TLDR; A model for textual and visual Q&A. The architecture employs unique attent
 
 ![eq6](images/visual_qa/eq6.png)
 
+Once we have our attention gate g, we can use the attention mechanism to generate the context vector c. Note that each fact results in a attention gate (scalar value). If we are using soft attention, our context vector is very easy to calculate:
+
+![eq7](images/visual_qa/eq7.png)
+
+This was a nice way to determine context but it has one main flaw. Since we are just taking the weight sum, we end by losing positional and ordering information from our facts. We need an attention mechanism that accounts for previous inputs which allows it to preserve order (unlike soft attention). 
+
+![diagram4](images/visual_qa/diagram4.png)
+
+Cue the attention based GRU. Recall that the update gate in our GRU determines how much information should be passed from the previous hidden state and the current input. This update gate is only able to process previous hidden state and current input so it has no idea about the question of previous episodic memories. So if we replace this update gate with our attention gate, we can solve for this issue and the fact that we want attention to maintain positional and ordering information. So, all we do it simply replace the update gate u_i with attention gate g_i:
+
+![eq8](images/visual_qa/eq8.png)
+
+Just keep in mind that before, u_i had dimensions [N, H] but now g is a scalar. This actually allows to visualize our gates across the inputs. You could replace the softmax used to compute g with a sigmoid, then g would also be [N, H]. I will explore this in my tensorflow implementation. The context vector is derived using the facts with this attention based GRU. So for each episode, we generate context vector c by feeding in each fact into the GRU and the hidden state of the last input fact is our context vector. 
+
 ##### Memory Update Mechanism
+
+- Now the memory update is very simple. All we have to do is use our context vector c and the previous episodic memory. Note all the other GRUs besides the attention based GRUs are normal GRUs. 
+
+![eq9](images/visual_qa/eq9.png)
+
+- With the GRU above, we are using the same set of weights for each of the episodes. This is known as a "tied model" but using a RELU instead offers a slight increase in accuracy.
+
+![eq10](images/visual_qa/eq10.png)
+
+![diagram3](images/visual_qa/diagram3.png)
+
+##### Answer Module:
+
+- After multiple episode pases, we get the final M^{T}, which gets passed to the answer module. The predicted answer is trained with actual answer appended with an EOS token.
+
+![eq11](images/visual_qa/eq11.png)
 
 ### Training Points:
 
 - DMN+ outperformed DMN on the babI-10k dataset on almost all of the questions.
-
-
-### Unique Points:
-
-- 
-
+- Sigmoid vs. softmax for attention gates is not tested empirically.
 
 
