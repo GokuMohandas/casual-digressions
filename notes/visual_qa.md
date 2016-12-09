@@ -83,7 +83,7 @@ Just keep in mind that before, u_i had dimensions [N, H] but now g is a scalar. 
 
 ##### Answer Module:
 
-- After multiple episode pases, we get the final M^{T}, which gets passed to the answer module. The predicted answer is trained with actual answer appended with an EOS token.
+- After multiple episode passes, we get the final M^{T}, which gets passed to the answer module. The predicted answer is trained with actual answer appended with an EOS token.
 
 ![eq11](images/visual_qa/eq11.png)
 
