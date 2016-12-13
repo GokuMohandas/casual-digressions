@@ -82,6 +82,8 @@
 
 #### Optimization/Architecture
 
+- Highway Networks (notes/highway.md) [[arXiv] (https://arxiv.org/abs/1505.00387)]
+
 - [HyperNetworks] (notes/hypernetworks.md) [[arXiv] (https://arxiv.org/abs/1609.09106)]
 
 - [Using Fast Weights to Attend to the Recent Past] (notes/fast_weights.md) [[arXiv] (https://arxiv.org/abs/1610.06258)]
