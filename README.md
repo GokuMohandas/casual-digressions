@@ -82,7 +82,7 @@
 
 #### Optimization/Architecture
 
-- Highway Networks (notes/highway.md) [[arXiv] (https://arxiv.org/abs/1505.00387)]
+- [Highway Networks] (notes/highway.md) [[arXiv] (https://arxiv.org/abs/1505.00387)]
 
 - [HyperNetworks] (notes/hypernetworks.md) [[arXiv] (https://arxiv.org/abs/1609.09106)]
 
