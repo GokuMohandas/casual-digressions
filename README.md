@@ -88,4 +88,4 @@
 
 - [Using Fast Weights to Attend to the Recent Past] (notes/fast_weights.md) [[arXiv] (https://arxiv.org/abs/1610.06258)]
 
-- Quasi-Recurrent Neural Networks (notes/quasi.md) [[arXiv] (https://arxiv.org/abs/1611.01576)]
+- [Quasi-Recurrent Neural Networks](notes/quasi.md) [[arXiv] (https://arxiv.org/abs/1611.01576)]
