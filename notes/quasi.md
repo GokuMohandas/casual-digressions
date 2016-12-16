@@ -38,15 +38,15 @@ RNN's have limited parallelism because we have to feed in one time-step at a tim
 
 - The paper extends zoneout (Kreuget et al. 2016), which modifies our pooling function to keep the previous pooling state for a subset of channels. This is equivalent to the following forget gate. On top of this, normal dropout is also applied between layers including the layer between embedding and first QRNN layer.
 
+![cnn](images/quasi/forget.png)
+
 - Paper also extends skip-connections between EVERY QRNN layer which is known as dense convolution. This really improves gradient flow and convergence but now we have quadratic number of layers (L(L-1)). 
 
-#### Encoder-Deocder:
+#### Encoder-Decoder:
 
 ![cnn](images/quasi/fig2.png)
 
 - We use a QRNN encoder and a modified WRNN (with attention) decoder. The reason for a modified QRNN is that feeding in the last encoder hidden state (output of encoder's pooling layer) into the decoder's recurrent pooling layer, will not allow the encoder state to affect any of the gates in the decoder pooling layer. So the proposed solution is to use the final encoder hidden state with the outputs each decoder's output from its conv operations  (basically the last encoder hidden state from encoder pool operations is taken into account with the decoder's conv operations and both are used to determine the decoder's pool outputs). 
-
-![cnn](images/quasi/forget.png)
 
 - So now the modified operations in the decoder look like this:
 
