@@ -1,4 +1,4 @@
-## [Highlights and Tutorials for Concepts Discussed in ?Richard Socher on the Future of Deep Learning.?](https://www.oreilly.com/ideas/richard-socher-on-the-future-of-deep-learning)
+## [Highlights and Tutorials for Concepts Discussed in Richard Socher on the Future of Deep Learning](https://www.oreilly.com/ideas/richard-socher-on-the-future-of-deep-learning)
 
 **Raw interview**: https://www.oreilly.com/ideas/richard-socher-on-the-future-of-deep-learning . I highly encourage listening to the podcast because the questions were so well crafted. 
 
