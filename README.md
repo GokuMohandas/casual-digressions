@@ -49,6 +49,8 @@
  
 - [Dynamic Coattention Networks For Question Answering] (notes/coattention.md) [[arXiv](https://arxiv.org/abs/1611.01604)]
 
+- [Richard Socher on the Future of Deep Learning] (notes/future_socher.md) [[OReilly](https://www.oreilly.com/ideas/richard-socher-on-the-future-of-deep-learning)]
+
 #### Reinforcement Learning
 
 - Episodic Exploration for Deep Deterministic Policies: An Application to StarCraft Micromanagement Tasks [[arXiv] (http://arxiv.org/abs/1609.02993)]
