@@ -94,7 +94,9 @@ Tensorflow is great for using existing models and recombine them in interesting 
 ### Pertinent tutorials/breakdowns:
 
 [Attentional Interface](https://theneuralperspective.com/2016/11/20/recurrent-neural-network-rnn-part-4-attentional-interfaces/) (Implementation included)
+
 [Pointer Sentinel](https://theneuralperspective.com/2016/10/04/pointer-sentinel-mixture-models/)
+
 [QRNN](https://theneuralperspective.com/2016/12/16/quasi-recurrent-neural-networks/) (TF Implementation coming soon)
 
 
