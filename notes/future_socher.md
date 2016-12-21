@@ -30,18 +30,18 @@ The long term research goal is a joint multi-task learning where a single model 
 
 **A**: The model in the paper is currently #1 in the Stanford Q/A dataset [(SQuAD)](https://rajpurkar.github.io/SQuAD-explorer/). The model reinterprets the question in light of the document and then reinterprets the document in terms of the question. 
 
-[coattention](images/future_socher/coattention.png)
+![coattention](images/future_socher/coattention.png)
 
 The model also uses a dynamic pointer decoder, which outputs a range of two points (beginning/end) and the answer are the words in between these two locations. 
 
-[pointer](images/future_socher/pointer.png)
+![pointer](images/future_socher/pointer.png)
 
 Limitations of the this pointer decoder include not being able to answer simple yes/no questions but Stephen Merity?s paper on [Pointer Sentinel Mixture Models](https://arxiv.org/abs/1609.07843) is all about combining pointers with softmax/classifiers to address this limitation.
 
 In the paper, pointer networks were used to predict the next item in a sequence based on context. Traditional softmax classifiers cannot usually give rare words or names as appropriate outputs when they are in fact the correct outputs. Pointers can help solve this issue by puling the output from the inputs. 
 
-[sentinel](images/future_socher/diagram.png)
-[gating](images/future_socher/gating.png)
+![sentinel](images/future_socher/diagram.png)
+![gating](images/future_socher/gating.png)
 
 Merging will lead to a well performing model, but was not required for SQuAD because each answer lies as a sub-phrase in the input document. Dynamic because we can do multiple passes on the input and correct its answer after each pass. 
 
@@ -49,7 +49,7 @@ Merging will lead to a well performing model, but was not required for SQuAD bec
 
 (I have detailed the QRNN in my [blog post](https://theneuralperspective.com/2016/12/16/quasi-recurrent-neural-networks/)). I will have a tensorflow implementation soon as well.
 
-[qrnn](images/future_socher/quasi.png)
+![qrnn](images/future_socher/quasi.png)
 
 **A**: Parallelism is a very powerful concept in deep learning but we cannot incorporate directly for RNNs because subsequent output depends on previous output. The QRNN is able to parallelize in the time step dimension and feature dimension. 
 
