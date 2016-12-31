@@ -84,6 +84,8 @@
 
 - [Neural Turing Machines] (notes/ntm.md) [[arXiv] (http://arxiv.org/abs/1410.5401)]
 
+- [Hybrid Computing using a Neural Network with Dynamic External Memory] [[Nature](https://goo.gl/8T4EST)]
+
 
 #### Generative Adversarial Networks
 
