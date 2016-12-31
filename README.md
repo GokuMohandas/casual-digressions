@@ -1,7 +1,9 @@
 ### Goku Mohandas
 
 #### Recommendation Engines
+
 - [Deep Neural Networks for Youtube Recommendations] (notes/youtube_recommendations.md) [[Google] (https://research.google.com/pubs/pub45530.html)]
+
 
 #### Representation Learning
 
@@ -11,6 +13,7 @@
 
 - Multi-layer Representation Learning for Medical Concepts [[arXiv] (https://arxiv.org/abs/1602.05568)]
 
+
 #### Text Classification
 
  - [Convolutional Neural Networks for Sentence Classification] (notes/cnn_text.md) [[arXiv] (http://arxiv.org/abs/1408.5882)]
@@ -18,6 +21,7 @@
  - Recurrent Neural Network Regularization [[arXiv] (http://arxiv.org/abs/1409.2329)]
  
  - Grammar as a Foreign Language [[arXiv] (http://arxiv.org/abs/1412.7449)]
+ 
  
 #### Seq-to-Seq Models (translation)
  
@@ -37,6 +41,7 @@
 
 - [Fully Character-Level Neural Machine Translation without Explicit Segmentation] (notes/fully_char.md) [[arXiv](https://arxiv.org/abs/1610.03017)]
 
+
 #### Neural Conversation Models / QA
 
  - [A Neural Conversational Model] (notes/conversation.md) [[arXiv] (http://arxiv.org/abs/1506.05869)]
@@ -51,11 +56,20 @@
 
 - [Richard Socher on the Future of Deep Learning] (notes/future_socher.md) [[OReilly](https://www.oreilly.com/ideas/richard-socher-on-the-future-of-deep-learning)]
 
+
+#### Logic/Reasoning
+
+- [Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks] [[arXiv](https://arxiv.org/abs/1607.01426)]
+
+- [Deep API Learning] [[arXiv](https://arxiv.org/abs/1605.08535)]
+
+
 #### Reinforcement Learning
 
 - Episodic Exploration for Deep Deterministic Policies: An Application to StarCraft Micromanagement Tasks [[arXiv] (http://arxiv.org/abs/1609.02993)]
 
 - Third Person Imitation Learning [[arXiv](http://openreview.net/pdf?id=B16dGcqlx)]
+
 
 #### Google DeepMind
 
@@ -63,11 +77,14 @@
 
 - Decoupled Neural Interfaces using Synthetic Gradients [[arXiv] (https://arxiv.org/abs/1608.05343)] [[Tutorial] (https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/)]
 
+
 #### Neural Turing Machines
 
 - [Neural Turing Machines] (notes/ntm.md) [[arXiv] (http://arxiv.org/abs/1410.5401)]
 
+
 #### Generative Adversarial Networks
+
 - [Generative Adversarial Networks] (notes/GAN.md) [[arXiv] (https://arxiv.org/abs/1406.2661)]
 
 -  [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](notes/dcgan.md) [[arXiv](http://arxiv.org/abs/1511.06434v2)]
@@ -78,16 +95,36 @@
 
 - [Learning to Protect Communications with Adversarial Neural Cryptography](notes/crypto_gan.md) [[arXiv](https://arxiv.org/abs/1610.06918)]
 
+
 #### Image Captioning
 
 - [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](notes/show_attend_tell.md) [[arXiv](https://arxiv.org/abs/1502.03044)]
 
+
+#### Review Papers
+
+- [Understanding deep learning requires rethinking generalization] [[arXiv] (https://arxiv.org/abs/1505.00387)]
+
+
 #### Optimization/Architecture
 
-- [Highway Networks] (notes/highway.md) [[arXiv] (https://arxiv.org/abs/1505.00387)]
+- [Highway Networks] (notes/highway.md) [[arXiv] (https://arxiv.org/abs/1611.03530)]
+
+- [Maxout Networks] [[arXiv](https://arxiv.org/abs/1302.4389)]
 
 - [HyperNetworks] (notes/hypernetworks.md) [[arXiv] (https://arxiv.org/abs/1609.09106)]
 
 - [Using Fast Weights to Attend to the Recent Past] (notes/fast_weights.md) [[arXiv] (https://arxiv.org/abs/1610.06258)]
 
-- [Quasi-Recurrent Neural Networks](notes/quasi.md) [[arXiv] (https://arxiv.org/abs/1611.01576)]
+- [Quasi-Recurrent Neural Networks](notes/quasi.md) [[arXiv](https://arxiv.org/abs/1611.01576)]
+
+- [Learning to learn by gradient descent by gradient descent] [[arXiv](https://arxiv.org/abs/1606.04474)]
+
+- [Language Modeling with Gated Convolutional Networks] [[arXiv](https://arxiv.org/abs/1612.08083)]
+
+- [Value Iteration Networks] [[arXiv](https://arxiv.org/abs/1602.02867)]
+
+- [Adding Gradient Noise Improves Learning for Very Deep Networks] [[arXiv](https://arxiv.org/abs/1511.06807)]
+
+- [Outrageously Large Neural Networks: The Sparsely-gated Mixture-of-Experts Layer] [[Open Review](https://openreview.net/pdf?id=B1ckMDqlg)]
+
