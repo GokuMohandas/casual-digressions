@@ -56,6 +56,8 @@
 
 - [Richard Socher on the Future of Deep Learning] (notes/future_socher.md) [[OReilly](https://www.oreilly.com/ideas/richard-socher-on-the-future-of-deep-learning)]
 
+- [A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks][[arXiv](https://arxiv.org/abs/1611.01587)]
+
 
 #### Logic/Reasoning
 
