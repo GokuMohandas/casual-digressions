@@ -10,23 +10,23 @@ TLDR; Learning to classify from just a few examples. We use a small labeled supp
 
 - This paper uses the Matching Nets (MN) in order to do one-shot learning. These MNs are able to produce test labels for unobserved classes without ANY changes to the network. 
 
-![eq1](image/oneshot/eq1.png)
+![eq1](images/oneshot/eq1.png)
 
 - The small set S is our training set which has known values of x and y. We use this to map to a classifier which uses this small data to determine the probability of test \hat{x}.
 
-![eq2](image/oneshot/eq2.png)
+![eq2](images/oneshot/eq2.png)
 
 #### Attention Kernel
 
 - The attention kernel is used to get a scalar value (attn weight) for each unique label in S. We sum the weights to determine the correct label for \hat{x}.
 
-![eq3](image/oneshot/eq3.png)
+![eq3](images/oneshot/eq3.png)
 
 - Our attention is the softmax (normalization) applied to the cosine distance between the test sample and each of the train samples. f and g are parametric operations that we will take a closer look at next.
 
 #### Full Context Embeddings (f and g)
 
-![diagram1](image/oneshot/diagram1.png)
+![diagram1](images/oneshot/diagram1.png)
 
 The parametric networks for f and g are defined below:
 
@@ -34,7 +34,7 @@ The parametric networks for f and g are defined below:
 
 - The fully conditional embedding g is a bidirectional LSTM which processed the parametric output of g' (VGG/Inception/etc.)
 
-![eq5](image/oneshot/eq5.png)
+![eq5](images/oneshot/eq5.png)
 
 - The fully conditional embedding f performs K steps of "reads" (attnLSTM) to the parametric output of f' (VGG/Inception/etc.) and g(S).
 
