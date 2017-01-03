@@ -1,4 +1,4 @@
-## - [Learning to Learn how to Answer Questions for Question/Answer Tasks: Analysis and Implementations for Recent Deep Q/A Architectures (WIP)]
+## - [Learning to Learn how to Answer Questions for Question/Answer Tasks: An In-depth Analysis and Implementations for Recent Deep Q/A Architectures (WIP)]
 
 Make  a TLDR
 

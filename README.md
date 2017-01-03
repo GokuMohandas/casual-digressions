@@ -64,7 +64,7 @@
 
 - [Bidirectional Attention Flow for Machine Comprehension][[arXiv](https://arxiv.org/abs/1611.01603)]
 
-- [Learning to Learn how to Answer Questions for Question/Answer Tasks: Analysis and Implementations for Recent Deep Q/A Architectures (WIP)](notes/qa_goku.md)
+- [Learning to Learn how to Answer Questions for Question/Answer Tasks: An In-depth Analysis and Implementations for Recent Deep Q/A Architectures (WIP)](notes/qa_goku.md)
 
 
 #### Logic/Reasoning
