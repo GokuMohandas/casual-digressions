@@ -30,7 +30,7 @@ TLDR; Learning to classify from just a few examples. We use a small labeled supp
 
 The parametric networks for f and g are defined below:
 
-![eq4](image/oneshot/eq4.png)
+![eq4](images/oneshot/eq4.png)
 
 - The fully conditional embedding g is a bidirectional LSTM which processed the parametric output of g' (VGG/Inception/etc.)
 
