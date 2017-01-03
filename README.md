@@ -1,5 +1,9 @@
 ### Goku Mohandas
 
+#### One Shot Learning
+
+- [Matching Networks for One Shot Learning] (notes/oneshot.md) [[arXiv](https://arxiv.org/abs/1606.04080)]
+
 #### Recommendation Engines
 
 - [Deep Neural Networks for Youtube Recommendations] (notes/youtube_recommendations.md) [[Google] (https://research.google.com/pubs/pub45530.html)]
@@ -59,6 +63,8 @@
 - [A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks][[arXiv](https://arxiv.org/abs/1611.01587)]
 
 - [Bidirectional Attention Flow for Machine Comprehension][[arXiv](https://arxiv.org/abs/1611.01603)]
+
+- [Learning to Learn how to Answer Questions for Question/Answer Tasks: Analysis and Implementations for Recent Deep Q/A Architectures (WIP)](notes/qa_goku.md)
 
 
 #### Logic/Reasoning
