@@ -4,7 +4,7 @@ TLDR; Use gradient descent to train an LSTM optimizee which is used to determine
 
 
 ### Detailed Notes:
-- What does it mean to learn to learn? If you think about all the recent advancements in AI architecture, it all boils down to one think. We are coming up with better ways to represent our data so that we can better perform some end goal. Ex. Processing images with deep convolutional components or processing text with recurrent architectures. This is an oversimplification but essentially we are using these deep structures to channel and morph our input data into a more informative/descriptive/efficient representation. 
+- What does it mean to learn to learn? If you think about all the recent advancements in AI architecture, it all boils down to one thing. We are coming up with better ways to represent our data so that we can better perform some end goal. Ex. Processing images with deep convolutional components or processing text with recurrent architectures. This is an oversimplification but essentially we are using these deep structures to channel and morph our input data into a more informative/descriptive/efficient representation. 
 
 - This paper applies this idea to the traditional gradient descent. Why should we hand pick the parameters of our optimizer, instead, we should learn how to pick those parameters. The idea is using a separate network that functions using the main function it self (f) and the parameters of the optimizer (/theta).
 
@@ -28,7 +28,7 @@ TLDR; Use gradient descent to train an LSTM optimizee which is used to determine
 
 ![eq1](images/learning_to_learn/diagram2.png)
 
-- One issue with the method in this paper was that gradients w.r.t optimzee parameters can vary greatly in terms of magnitude at different points of the input. Our optimizer's will tend to focus on these large deviances which will bias the training. So the solution was to preprocess the gradients by applying a log transformation to it. But keep in mind that log(gradient) approaches -infinity as the gradient approaches 0. So the preprocessing step look like below (p=10 in this paper):
+- One issue with the method in this paper was that gradients w.r.t optimzee parameters can vary greatly in terms of magnitude at different points of the input. Our optimizer's will tend to focus on these large deviances which will bias the training. So the solution was to preprocess the gradients by applying a log transformation to it. But keep in mind that log(gradient) approaches -infinity as the gradient approaches 0. So the preprocessing step looks like below (p=10 in this paper):
 
 ![eq1](images/learning_to_learn/diagram3.png)
 
