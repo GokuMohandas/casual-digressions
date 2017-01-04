@@ -1,8 +1,10 @@
-## - [Learning to Learn how to Answer Questions for Question/Answer Tasks: An In-depth Analysis and Implementations for Recent Deep Q/A Architectures (WIP)]
+## - [An In-depth Analysis and Implementations for Recent Deep Q/A Architectures]
 
 Make  a TLDR
+Insert Gif of the DCN UI
 
-disclaimer: This paper is not about an architecture that learns to learns such as (LINK TO GRADIENT LEARNING PAPER), but in this case it is the reader who will potentially be learning to learn :) I just really like these titles as do many others. LINK TO TWITTER LEARNING TO LEARN BY LEARNING TO LEARN GRAdient descent by gradient descent.
+TBALE ON CONTENTS
+
 
 Introduction to Deep Q/A architecture, mainly focused on the recent developments by Salesforce team (DMN/DMN+ from Metamind) and University of Washington/ Allen Institute for Artificial Intelligence (BiDAF). 
 
@@ -12,7 +14,7 @@ What dose Q/A look like (babI examples, SQuAD examples, etc.)? What can we do, w
 
 Analysis/Implementations:
 DMN+ 
-	   Briefly mention DMN and link to tutorial)
+	   Briefly mention DMN and link to tutorial), big diff is not using supporting facts
 	   Provide short summary of DMN+ and link to tutorial
 	   Show architecture from paper with citations
 	   Show some preprocessing images.
@@ -35,7 +37,7 @@ SQuAD leaderboard (talk about very competitive and collaborative community). SOT
 
 What is left to do? What are the next steps? Talk about joint networks and similar work being done with knowledge bases and logical reasoning, etc. Point to work by Salesforce and Pete SCOMAROCKS STARTUP  AND also mention MSFT (currently leading on SQUAD) but talk about "we are more than likely to see that fluctuate very soon). 
 
-GitHub Repo: Implementations will be uploaded soon (BiDAF is still WIP). Follow on
+GitHub Repo: Implementations will be uploaded soon (BiDAF is still WIP), along with UI for all models to test out your own inputs. Follow on
 Twitter for updates! [FOLLOW BUTTON]
 
 Citations!!! (4 articles and maybe a few more from back of DMN+ paper and gradient noise paper_

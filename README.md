@@ -64,7 +64,7 @@
 
 - [Bidirectional Attention Flow for Machine Comprehension][[arXiv](https://arxiv.org/abs/1611.01603)]
 
-- [Learning to Learn how to Answer Questions for Question/Answer Tasks: An In-depth Analysis and Implementations for Recent Deep Q/A Architectures (WIP)](notes/qa_goku.md)
+- [An In-depth Analysis and Implementations for Recent Deep Q/A Architectures](notes/qa_goku.md)
 
 
 #### Logic/Reasoning
@@ -130,7 +130,7 @@
 
 - [Quasi-Recurrent Neural Networks](notes/quasi.md) [[arXiv](https://arxiv.org/abs/1611.01576)]
 
-- [Learning to learn by gradient descent by gradient descent] [[arXiv](https://arxiv.org/abs/1606.04474)]
+- [Learning to learn by gradient descent by gradient descent](notes/learning_to_learn.md) [[arXiv](https://arxiv.org/abs/1606.04474)]
 
 - [Language Modeling with Gated Convolutional Networks] [[arXiv](https://arxiv.org/abs/1612.08083)]
 
