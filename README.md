@@ -64,8 +64,6 @@
 
 - [Bidirectional Attention Flow for Machine Comprehension](bidaf.md)[[arXiv](https://arxiv.org/abs/1611.01603)]
 
-- [A Gentle Analysis of Recent Deep Q/A Architectures](notes/qa_goku.md)
-
 
 #### Logic/Reasoning
 
