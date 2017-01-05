@@ -62,7 +62,7 @@
 
 - [A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks][[arXiv](https://arxiv.org/abs/1611.01587)]
 
-- [Bidirectional Attention Flow for Machine Comprehension](bidaf.md)[[arXiv](https://arxiv.org/abs/1611.01603)]
+- [Bidirectional Attention Flow for Machine Comprehension](bidaf.md) [[arXiv](https://arxiv.org/abs/1611.01603)]
 
 
 #### Logic/Reasoning
