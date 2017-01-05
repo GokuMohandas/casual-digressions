@@ -19,7 +19,7 @@ TLDR; A model for textual and visual Q&A. The architecture employs unique attent
 
 ![eq2](images/visual_qa/eq2.png)
 
-- And the diagram looks like below, with the results of the positional encoder feeding into the input fusion layer (bidirectional GRUs). 
+- And the diagram looks like below, with the results of the positional encoder feeding into the input fusion layer (bidirectional GRUs).
 
 ![diagram1](images/visual_qa/diagram1.png)
 
@@ -91,5 +91,32 @@ Just keep in mind that before, u_i had dimensions [N, H] but now g is a scalar. 
 
 - DMN+ outperformed DMN on the babI-10k dataset on almost all of the questions.
 - Sigmoid vs. softmax for attention gates is not tested empirically.
+
+### Shapes and Analysis
+
+![eq11](images/visual_qa/shapes1.png)
+
+![eq11](images/visual_qa/shapes2.png)
+
+![eq11](images/visual_qa/shapes3.png)
+
+![eq11](images/visual_qa/shapes4.png)
+
+![eq11](images/visual_qa/shapes5.png)
+
+![eq11](images/visual_qa/shapes6.png)
+
+![eq11](images/visual_qa/shapes7.png)
+
+![eq11](images/visual_qa/shapes8.png)
+
+- The effect of episodes on Task 3. You can see the impact of using less or more episodes in this task since it involves gather three supporting facts to answer the question. Note: test performance was not continued till convergence. 
+![eq11](images/visual_qa/episodes.png)
+
+- The use of gradient noise (https://arxiv.org/abs/1511.06807) did not really help much with Task 2 but perhaps with more memory intensive tasks, it will prove useful.
+![eq11](images/visual_qa/grad_noise.png)
+
+- The positional encoding and GRU method proved to show similar performance but the positional encoding scheme is significantly faster (1.5X speed up). Only complaint is that positional encoding does not take into account the sentence lengths but that did not seem to affect performance.
+![eq11](images/visual_qa/pos_enc.png)
 
 

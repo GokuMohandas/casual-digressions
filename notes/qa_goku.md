@@ -1,4 +1,4 @@
-## - [An In-depth Analysis and Implementations for Recent Deep Q/A Architectures]
+## - [A Gentle Analysis of Recent Deep Q/A Architectures]
 
 Make  a TLDR
 Insert Gif of the DCN UI
