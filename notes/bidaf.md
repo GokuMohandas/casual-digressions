@@ -86,7 +86,7 @@ TLDR; In order to accurately answer questions based on a document, we need to be
  
 ### Training Points:
 
-![eq7](images/bidaf/eq11.png)
+![eq7](images/bidaf/eq12.png)
 
 - Specific training details in section 4 and ablation results in section 5.
 
