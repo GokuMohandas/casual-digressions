@@ -64,6 +64,8 @@
 
 - [Bidirectional Attention Flow for Machine Comprehension](notes/bidaf.md)  [[arXiv](https://arxiv.org/abs/1611.01603)]
 
+- [Generating Long and Diverse Responses with Neural Conversation Models] (notes/diverse.md) [[arXiv](https://openreview.net/pdf?id=HJDdiT9gl)]
+
 
 #### Logic/Reasoning
 
