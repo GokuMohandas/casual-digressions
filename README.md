@@ -66,6 +66,8 @@
 
 - [Generating Long and Diverse Responses with Neural Conversation Models] (notes/diverse.md) [[arXiv](https://openreview.net/pdf?id=HJDdiT9gl)]
 
+- [Gated-Attention Readers for Text Comprehension] (notes/ga.md) [[arXiv](https://arxiv.org/abs/1606.01549)]
+
 
 #### Logic/Reasoning
 
