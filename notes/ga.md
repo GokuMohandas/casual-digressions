@@ -18,6 +18,7 @@ TLDR; The Gated-Attention (GA) Reader uses a multi-hop architecture to build que
 ![diagram1](images/ga/diagram1.png)
 
 - The input document (context) and query are embedded. D is the total number of words in the document and Q is the total number of words in the query.
+
 ![eq1](images/ga/eq1.png)
 
 - These inputs are used in the multi-hop architecture. The input embeddings (X) are used as is for the first layer of the GA, but then get transformed for the subsequent X inputs. The same Y is used for each input into the GRU_Q.
