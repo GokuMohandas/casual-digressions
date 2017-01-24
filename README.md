@@ -117,7 +117,7 @@
 
 #### Review Papers
 
-- [Understanding deep learning requires rethinking generalization] [[arXiv] (https://arxiv.org/abs/1505.00387)]
+- [Understanding deep learning requires rethinking generalization](notes/generalization.md) [[arXiv] (https://arxiv.org/abs/1505.00387)]
 
 
 #### Optimization/Architecture
