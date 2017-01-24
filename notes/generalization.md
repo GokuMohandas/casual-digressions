@@ -1,5 +1,11 @@
 ## - [Understanding deep learning requires rethinking generalization](https://arxiv.org/abs/1611.03530)
 
+```
+Understanding Deep Learning Requires Rethinking Generalization
+Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, Oriol Vinyals
+https://arxiv.org/abs/1611.03530 10 Nov 2016
+```
+
 TLDR; Even very large, deep networks can have small generalization error (difference between training and test performance). The cause of this is usually attributed to model architecture and/or regularization techniques. However, this paper states that these approaches fail to explain the real cause of the small generalization error.
 
 ### Necessary Background
