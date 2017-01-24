@@ -10,7 +10,7 @@ TLDR; Even very large, deep networks can have small generalization error (differ
 
 ### Necessary Background
 
-- Rademacher Complexity: A complexity measure of a certain hypothesis class H on a dataset (X_1, ...X_n). The complexity measures, on average, hypothesis class H's chance of fitting all the possible label assignments in the data. In the randomization section below, we will use this complexity with our DNNs to prove that this complexity is not enough to account for the success of such large models.
+- Rademacher Complexity: A complexity measure of a certain hypothesis class H on a dataset (X_1, ...X_n). The complexity measures, on average, hypothesis class H's chance of fitting all the possible label assignments in the data. In the randomization section below, we will use this complexity with our DNNs to prove that this complexity is not enough to account for the success of large models.
 
 ![eq1](images/generalization/eq1.png)
 
@@ -26,17 +26,17 @@ TLDR; Even very large, deep networks can have small generalization error (differ
 
 - Even with various levels of randomness in the data, the model is still able to fit. The generalization (test error - train error) starts to increase as the amount of noise in the randomization is increased. This means that the model is learning to recognize what ever signal remains in the data and use memorization to fit the noise. 
 
-- Several levels of randomness were tested with the data and the network was always able to fit completely during training. However, the objective function took longer as more randomness was inserted. This is mainly due to large errors that are back propagated resulting is large parameter updates via the gradients. 
+- Several levels of randomness were tested with the data and the network was always able to fit completely during training. However, the objective function took longer as more randomness was inserted. This is mainly due to large errors that are back propagated resulting in large parameter updates via the gradients. 
 
 ![diagram1](images/generalization/diagram1.png)
 
 - One thing to note in these experiments is that this is just a data change. The paper uses this randomization experiment to rule out possible sources of explanation for successful generalization such as the Rademacher complexity and uniform stability. 
 
-- We can rule out complexity measure like Rademacher since our model fits perfect to the training data (therefore, R(H) = 1). We can no longer use uniform convergence boundaries as a means to explain the low generalization error. And we can't use stability measures either because this change is to the data and not any of the model parameters. 
+- We can rule out complexity measures like Rademacher since our model fits perfectly to the training data (therefore, R(H) = 1). We can no longer use uniform convergence boundaries as a means to explain the low generalization error. And we can't use stability measures either because this change is to the data and not any of the model parameters.
 
 #### Regularization:
 
-- The second notion is that "Explicit regularization may improve generalization performance, but is neither necessary not by itself sufficient for controlling generalization error". The paper generalizes regularization techniques as a tuning parameters that helps with generalization but is not required for low test error. A nice way to think about the role of regularization is to think about the entire hypothesis space. By using regularizers, we are essentially decreasing the possible hypothesis space to a smaller subset. 
+- The second notion is that "Explicit regularization may improve generalization performance, but is neither necessary nor by itself sufficient for controlling generalization error". The paper generalizes regularization techniques as a tuning parameters that helps with generalization but is not required for a low test error. A nice way to think about the role of regularization is to think about the entire hypothesis space. By using regularizers, we are essentially decreasing the possible hypothesis space to a smaller subset. 
 
 - The paper experimented with three types of explicit regularization: data augmentation, weight decay and dropout. The authors found that data augmentation and weight decay helped decrease the test error but even if they were not used, the models were still able to generalize well. (Note: augmentation was found to be considerably more helpful compared to weight decay aka data is the best regularizer :) ).
 
@@ -48,7 +48,7 @@ TLDR; Even very large, deep networks can have small generalization error (differ
 
 #### Finite-Sample Expressivity:
 
-- One proof I really enjoyed from the paper was for the theorem that "there exists a two-layer neural network with ReLU activations and 2n+d weights that can represent any function on a sample of size n in d dimensions". The proof can be found in the appendix of the paper.
+- One proof I really enjoyed from the paper was for the theorem that "there exists a two-layer neural network with ReLU activations and 2n+d weights that can represent any function on a sample of size n in d dimensions". This really demonstrates the brute-force capacity of neural nets for any dataset. The proof can be found in the appendix of the paper.
 
 ### Takeaway:
 
