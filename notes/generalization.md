@@ -1,4 +1,4 @@
-## - [Understanding deep learning requires rethinking generalization](https://arxiv.org/abs/1611.03530)
+## - [Understanding Deep Learning Requires Rethinking Generalization](https://arxiv.org/abs/1611.03530)
 
 ```
 Understanding Deep Learning Requires Rethinking Generalization
