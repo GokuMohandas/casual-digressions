@@ -3,6 +3,7 @@
 Reason to Read: We have all seen use cases of deep learning in medicine, especially in tasks were image processing is involved:
 
 > [Deep Learning Algorithm for Detection of Diabetic Retinopathy](http://jamanetwork.com/journals/jama/article-abstract/2588763)
+
 > [Deep learning algorithm does as well as dermatologists in identifying skin cancer](http://news.stanford.edu/2017/01/25/artificial-intelligence-used-identify-skin-cancer/)
 
 But we don't really see much progress with combining textual data sources (ie. electronic health records (EHR)) which seems strange since we generate these records on every single clinical visit. Some of this can be attributed to privacy concerns but lately, we are seeing an increasing amount of large, publicly available clinical databases. A few of my colleagues and my old professor have been steadily making progress with using deep learning with clinical records to draw out insights that can drastically aid the field. Implementation is below along with public access to the datasets.
