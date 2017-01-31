@@ -134,6 +134,8 @@
 
 - [Learning to learn by gradient descent by gradient descent](notes/learning_to_learn.md) [[arXiv](https://arxiv.org/abs/1606.04474)]
 
+- [GRAM: Graph-based Attention Model for Healthcare Representation Learning](notes/gram.md) [[arXiv](https://arxiv.org/abs/1611.07012)]
+
 - [Language Modeling with Gated Convolutional Networks] [[arXiv](https://arxiv.org/abs/1612.08083)]
 
 - [Value Iteration Networks] [[arXiv](https://arxiv.org/abs/1602.02867)]
@@ -141,6 +143,4 @@
 - [Adding Gradient Noise Improves Learning for Very Deep Networks] [[arXiv](https://arxiv.org/abs/1511.06807)]
 
 - [Outrageously Large Neural Networks: The Sparsely-gated Mixture-of-Experts Layer] [[Open Review](https://openreview.net/pdf?id=B1ckMDqlg)]
-
-- [GRAM: Graph-based Attention Model for Healthcare Representation Learning](notes/gram.md) [[arXiv](https://arxiv.org/abs/1611.07012)]
 
