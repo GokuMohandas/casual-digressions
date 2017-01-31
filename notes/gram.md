@@ -14,9 +14,8 @@ TLDR; Data insufficiency and interpretation are two common issues when using dee
 
 - The GRAM method infuses the medical ontologies into the encoding process by using an attentional interface. I don't think I can say it better than the paper can for how they use this information to create representations: 
 
-```bash
-"Considering the frequency of a medical concept in the EHR data and its ancestors in the ontology, GRAM decides the representation of the medical concept by adaptively combining its ancestors via attention mechanism." 
-```
+
+> "Considering the frequency of a medical concept in the EHR data and its ancestors in the ontology, GRAM decides the representation of the medical concept by adaptively combining its ancestors via attention mechanism." 
 
 The intuition is that when a medical event lacks enough data points, more weight is given to the ancestors of that event (parent nodes), since they can be learned better (since data exists for them via other child events). This effectively solves both the issue of data insufficiency and interpretation. 
 
