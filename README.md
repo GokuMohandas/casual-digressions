@@ -142,5 +142,5 @@
 
 - [Outrageously Large Neural Networks: The Sparsely-gated Mixture-of-Experts Layer] [[Open Review](https://openreview.net/pdf?id=B1ckMDqlg)]
 
-- [GRAM: Graph-based Attention Model for Healthcare Representation Learning] [[arXiv](https://arxiv.org/abs/1611.07012)]
+- [GRAM: Graph-based Attention Model for Healthcare Representation Learning](notes/gram.md) [[arXiv](https://arxiv.org/abs/1611.07012)]
 
