@@ -68,6 +68,8 @@
 
 - [Gated-Attention Readers for Text Comprehension] (notes/ga.md) [[arXiv](https://arxiv.org/abs/1606.01549)]
 
+- [FVQA: Fact based Visual Question Answering] (notes/fvqa.md) [[arXiv](https://arxiv.org/abs/1606.05433)]
+
 
 #### Logic/Reasoning
 
