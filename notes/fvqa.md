@@ -25,21 +25,37 @@ TLDR; Architecture that can use an image to answer questions that cover the scop
 - The information we extract from the image itself is very important since we need it to actually extract valuable supporting facts from a knowledge base. Fast-RCNN and similar models are used as object detectors, scene classifiers and attribute (action) classifiers.
 
 - An example for an image is as follows:
-![diagram2](images/fvqa/diagram2.png)
 
+![diagram2](images/fvqa/diagram2.png)
 
 #### Knowledge Bases
 - KBs are usually constructed by manual annotation (DBpedia, Wikipedia, etc.) or automatically extracted from unstructured/semi-structured data (WebChild, ConceptNet, etc.). The paper uses DBpedia, Webchild and ConceptNet.
 
+- DBpedia is extracted knowledge from wikipedia with concepts tied to categories. The data was extracted via crowd sourcing. ConceptNet is automatically generated from the Open Mind Common Sense (OMCS) project. WebChild is also automatically extracted from different sources on the web.
+
 #### Question Collection
 
-#### Training
+- A lot of work went into collecting the questions as they required also collecting proper supporting information from the KBs. The different steps include selecting the main concept in the image (object, scene or action). And then selecting the fact that is associated with the concept in the image. Finally, a question is asked and answered using the supporting information and the image. Note that the question is formulated with the supporting fact, as this is easier since we need to use a fact from a KB. An additional layer of testing was used to validate the dataset in order to truly determine that the question requires both the image and common sense/ knowledge to answer and that the supporting fact actually offers that missing knowledge from the image. 
 
+- One aspect that was not so clear in the paper was that, during question synthesis, a bunch of facts (not all) about the main concept in the image were presented to the annotators. They they had to come up with a question using the image and the supporting fact. During inference, we have the image and we parse the KBs looking for ALL of the related supporting facts. We then have to determine which of these is relevant using the image and question. 
 
+### Training
 
-### Training Points:
+#### Question-Query Mapping
 
--
+- The authors decided to map any possible question to a set of queries. Each question can be broken down into the following properties: visual concept (VC), a predicate (REL) and an answer source (AS). We can map any question to one of the 32 possible query types (listed in Pg. 14. Table. XIV). Here is how the process works:
+
+![eq1](images/fvqa/eq1.png)
+
+#### Answering by Querying KB
+
+- Once we have mapped the raw question to a query (out of 32 possibilities), we can work on constructing a KB query: {?X, ?Y} = Query(ImgID, REL, VC), where ?X is the specific concept (cat, animal) of type VC (object, scene or action) and ?Y is the concept in the KB that is linked to ?X via the REL. Let's walk through the example:
+
+![eq2](images/fvqa/eq2.png)
+
+- In our example above, the query returns knowledge based on the objects in the image that are CapableOf doing something (not just climbing trees). These facts are then accessed with a matching score (Jaccard similarity) to the question keyword "climb tress'). Here is the entire reasoning process:
+
+![diagram3](images/fvqa/diagram3.png)
 
 
 ### Unique Points:
