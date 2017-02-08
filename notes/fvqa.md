@@ -53,14 +53,30 @@ TLDR; Architecture that can use an image to answer questions that cover the scop
 
 ![eq2](images/fvqa/eq2.png)
 
-- In our example above, the query returns knowledge based on the objects in the image that are CapableOf doing something (not just climbing trees). These facts are then accessed with a matching score (Jaccard similarity) to the question keyword "climb tress'). Here is the entire reasoning process:
+- Let's take a closer look at some of the potential knowledge the model received:
+
+![eq3](images/fvqa/eq3.png)
+
+- In our example above, the query returns knowledge based on the objects in the image that are CapableOf doing something (not just climbing trees) and the objects in the KB also have to pass the three checks. Once we get all the relevant knowledge from the KB, we need to determine which of the facts will let us answer the question. In order to determine the answer, we first need to determine the source of the answer (IMAGE or KB). We can do this by feeding in the question into an LSTM and classifying it.
+
+- For our cat, dog example, we can see that the answer source (AS) comes from the image since we want to know which of these animals (in the image) can climb trees. An example with the same image, where the AS will be a KB is a question like 'Which type of animal is usually seen sitting on a fence?'. Weird example, I know, but I've seen a lot of cats just relaxing on fences. There are better examples in the the appendix.
+
+- Once we determine what the answer source is, different strategies are used to determine the ultimate answer. If the AS is IMAGE, the KB concepts (?Y) wll be matches to the keywords extracted from the question (throwing out stop words). These facts are then accessed with a matching score (Jaccard similarity) to the question keyword "climb tress'). Here is the entire reasoning process for this AS:
 
 ![diagram3](images/fvqa/diagram3.png)
 
+- If the AS is KB, separate classifiers focusing on scene/action or location of the object, along with key words from the question are used to determine the answer. 
+
+- There's quite a bit on the model performance at the different stages (QQ mapping, etc.) so I suggest thoroughly reading those sections. And now here is a better example of an AS that is KB:
+
+![diagram4](images/fvqa/diagram4.png)
 
 ### Unique Points:
 
-- 
+- One limitation (that stems from the question formulation procedure), is that an answer is only based off of one piece of common sense. It would be interesting to see different pieces of knowledge from the KB being used to answer a more intricate question.
 
+- The focus on using automatically generated KBs is really nice because we can isolate these qa platforms to specific domains with knowledge extracted from APIs, etc. (A few startups already working on this.)
+
+- Would like to see the database of images and questions used since this is quite a rare dataset.
 
 
