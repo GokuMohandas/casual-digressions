@@ -24,7 +24,7 @@ TLDR; The Query-Reduction Network (QRN) is capable of reducing a textual query i
 
 - Now, let's take a closer look at the QRN unit. For the QA task, the QRN accepts two inputs (the embedded context sentences and the embedded question). It also generates two outputs (a hidden state and the original input context sentence without any modification). The internal functions inside the QRN are as follows:First is a sigmoid operation (update gate function) that is meant to measure the relevance between the sentence and the local query. Second is a tanh operation (reduce function) which is meant to convert the local query to a candidate state, which is a reduced (transformed) query. Note: this candidate query is not the complete transformed state we used to convert to an actual transformed query. The actual reduced query is the h_t which uses this candidate hidden state \tilde{h}_t and the previous hidden state h_{t-1}.
 
-!{eq1](images/qrn/eq1.png)
+![eq1](images/qrn/eq1.png)
 
 - As we can see, the QRN processed one input context sentence at a time and we have our scalar update gate z for each input. This is almost like attention except for the fact that we are using the sigmoid operation. This means that each input has importance between (0,1). With global attention mechanisms, we apply softmax which makes the sum of all the inputs' importances to be 1. This is also the main discrepancy between the QRN and the attention GRU from the DMN+ paper. There, we first apply global attention to all the inputs and get the softmax scores for each input. Then, we feed in one input at a time and apply the respective attention scores instead of an update gate. 
 
@@ -32,29 +32,29 @@ TLDR; The Query-Reduction Network (QRN) is capable of reducing a textual query i
 
 - For QA tasks, we can also benefit from future sentences especially when trying to reformulate the query. So we can use a bidirectional QRN and we can even allow the cells in both directions to share variables. (so no need to define two explicit forward and backward cells, just use the same for both directions).
 
-!{eq2](images/qrn/eq2.png)
+![eq2](images/qrn/eq2.png)
 
 #### Extensions:
 
 - The paper also explores a few extensions for the QRN. We can use reset gates in order to nullify the candidate hidden state when required. This is as simple as adding another gate (reset gate) and accounting for it when calculating our output hidden state.
 
-!{eq3](images/qrn/eq3.png)
+![eq3](images/qrn/eq3.png)
 
 - Another extension is the use of vector gates. This is a commonly experiment extension in several other attention based recurrent papers as well (DMN+). Right now we receive our scalar values z and r (update and reset values) as scalars. Each input receives an update and reset scalar and we multiple the input by that scalar. We will leave our the reset scalar but the same things we are doing with the update value can be applied for it as well. 
 
-!{eq4](images/qrn/eq4.png)
+![eq4](images/qrn/eq4.png)
 
 #### Parallelization:
 
 - Now for one of the coolest aspects of the QRN. We can parallelize our QRN across the time dimension! There has been quite a bit of work recently on trying to parallelize aspects of recurrent architectures, most notably the quasi recurrent neural network (Q-RNN) by Socher et al. The QRNN architecture involves convolution as well but the QRN here is a bit simpler. In typical recurrent structures, the candidate state requires the previous hidden state. However, the QRN does not require this dependency and so we can parallelize across time. In fact the candidate vector is only based on the input. Let's take a look at the math. Note: the same math can be applied to vectorized gates as well.
 
-!{eq5](images/qrn/eq5.png)
+![eq5](images/qrn/eq5.png)
 
 - H is not able to parallelized and GPU compatible with a reasonable batch size (~ 100) and T and H (num hidden units, aka d in the paper) are around same ball park.
 
 - One more time I want to reiterate the fact that all the hidden state (candidate hidden state and final hidden state for each input context) are all only independent on the inputs. This is what allows us to parallelize the network. 
 
-!{eq5](images/qrn/eq5.png)
+![eq5](images/qrn/eq5.png)
 
 #### Ablation:
 
