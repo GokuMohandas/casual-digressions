@@ -54,7 +54,7 @@ TLDR; The Query-Reduction Network (QRN) is capable of reducing a textual query i
 
 - One more time I want to reiterate the fact that all the hidden state (candidate hidden state and final hidden state for each input context) are all only independent on the inputs. This is what allows us to parallelize the network. 
 
-![eq5](images/qrn/eq5.png)
+![eq6](images/qrn/eq6.png)
 
 #### Ablation:
 
