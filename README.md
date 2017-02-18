@@ -70,6 +70,8 @@
 
 - [FVQA: Fact based Visual Question Answering] (notes/fvqa.md) [[arXiv](https://arxiv.org/abs/1606.05433)]
 
+- [Query-Reduction Networks for Question Answering] (notes/qrn.md) [[arXiv](https://arxiv.org/abs/1606.04582)]
+
 
 #### Logic/Reasoning
 
