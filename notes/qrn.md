@@ -2,7 +2,7 @@
 
 TLDR; The Query-Reduction Network (QRN) is capable of reducing a textual query into a more informed query by processing the context information. The network also has the ability to parallelize over the time dimension, which is a limitation to parallelization for traditional recurrent structures. 
 
-[Skip the jibber jabber and take me to the parallelization.](#Parallelization)
+[Skip the jibber jabber and take me to the parallelization.](####Parallelization)
 
 ### Detailed Notes:
 
