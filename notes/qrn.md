@@ -2,6 +2,8 @@
 
 TLDR; The Query-Reduction Network (QRN) is capable of reducing a textual query into a more informed query by processing the context information. The network also has the ability to parallelize over the time dimension, which is a limitation to parallelization for traditional recurrent structures. 
 
+[Skip the jibber jabber and take me to the parallelization.](#Parallelization)
+
 ### Detailed Notes:
 
 #### Advantages:
@@ -46,7 +48,7 @@ TLDR; The Query-Reduction Network (QRN) is capable of reducing a textual query i
 
 #### Parallelization:
 
-- Now for one of the coolest aspects of the QRN. We can parallelize our QRN across the time dimension! There has been quite a bit of work recently on trying to parallelize aspects of recurrent architectures, most notably the quasi recurrent neural network (Q-RNN) by Socher et al. The QRNN architecture involves convolution as well but the QRN here is a bit simpler. In typical recurrent structures, the candidate state requires the previous hidden state. However, the QRN does not require this dependency and so we can parallelize across time. In fact the candidate vector is only based on the input. Let's take a look at the math. Note: the same math can be applied to vectorized gates as well.
+- Now for one of the coolest aspects of the QRN. We can parallelize our QRN across the time dimension! There has been quite a bit of work recently on trying to parallelize aspects of recurrent architectures, most notably the quasi recurrent neural network (Q-RNN) by Socher et al. The QRNN architecture involves convolution but the QRN here is a bit simpler. In typical recurrent structures, the candidate state requires the previous hidden state. However, the QRN does not require this dependency and so we can parallelize across time. In fact the candidate vector is only based on the input. Let's take a look at the math. Note: the same math can be applied to the vectorized gates version as well.
 
 ![eq5](images/qrn/eq5.png)
 
@@ -55,6 +57,8 @@ TLDR; The Query-Reduction Network (QRN) is capable of reducing a textual query i
 - One more time I want to reiterate the fact that all the hidden state (candidate hidden state and final hidden state for each input context) are all only independent on the inputs. This is what allows us to parallelize the network. 
 
 ![eq6](images/qrn/eq6.png)
+
+#### How to use hidden state to get reduced query:
 
 #### Ablation:
 
