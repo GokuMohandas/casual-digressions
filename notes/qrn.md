@@ -54,14 +54,19 @@ TLDR; The Query-Reduction Network (QRN) is capable of reducing a textual query i
 
 - Computation of H is now able to be parallelized and GPU compatible with a reasonable batch size (~ 100) and T and H (num hidden units, aka d in the paper) are around same ball park.
 
-- One more time I want to reiterate the fact that all the hidden state (candidate hidden state and final hidden state for each input context) are all only dependent on the inputs. This is what allows us to parallelize the network. 
+- I want to reiterate the fact that all the hidden state (candidate hidden state and final hidden state for each input context) are all only dependent on the inputs. This is what allows us to parallelize the network. 
 
 ![eq6](images/qrn/eq6.png)
 
 #### How to use hidden state to get reduced query:
 
+- A decoder is placed the input question embedding q to recover the original question. The loss from decoder is added to the model's overall loss. Now this decoder is used to decode the intermediate queries after each context input. We are able to receive comprehendible, reduced queries as we step in the t dimension. 
+
 #### Ablation:
 
+- You can see the shift in weights for each context input as we progress to higher layers. The reduced query is now focusing on something pertinent (not the original question's main subject) in order to accurately answer the question.
+
+![diagram2](images/qrn/diagram2.png)
 
 
 
