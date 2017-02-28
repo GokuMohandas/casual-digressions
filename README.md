@@ -72,6 +72,7 @@
 
 - [Query-Reduction Networks for Question Answering] (notes/qrn.md) [[arXiv](https://arxiv.org/abs/1606.04582)]
 
+- [Question Answering through Transfer Learning from Large Fine-grained Supervision Data](notes/transfer-qa.md) [[arXiv](https://arxiv.org/abs/1702.02171)]
 
 #### Logic/Reasoning
 
