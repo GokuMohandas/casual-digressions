@@ -24,13 +24,13 @@ TLDR; NLU tasks (QA, RTE, etc.) can benefit from transfer learning but the degre
 
 - A modification of the model is made so that we can use the same model for sentence level tasks. Now the model processes question q and a list of sentences from the context (instead of all at once). Now the output is just a "C-way" classification for each k-th sentence. For our target dataset, this is just a  2-way since the predictions for each sentence are binary. The results are quite straightforward via a max-pooling method:
 
-![eq1](images/tranfer-qa/eq1)
+![eq1](images/transfer-qa/eq1.png)
 
 ### Transfer Learning:
 
 - The actual transfer learning involves taking the weights from our BiDAF model pre-trained with the source dataset and then we have the option to further fine-tune the model using the target dataset. When we are transferring from BiDAF to BiDAF-T, span to sentence level, we transfer the weights of only the overlapping layers and then use our modified answer module. Details on the training configurations are provided in Appendix A. 
 
-![eq2](images/tranfer-qa/eq2)
+![eq2](images/transfer-qa/eq2.png)
 
 ### Results:
 
@@ -49,7 +49,7 @@ TLDR; NLU tasks (QA, RTE, etc.) can benefit from transfer learning but the degre
 - The attention maps for span-supervised model are significantly sparse compared to the sentence-supervised models. Again, affirming the notion that the span-level task is able to better capture the relationship between context words and the query. 
 
 ![diagram3](images/transfer-qa/diagram3.png)
-![eq3](images/tranfer-qa/eq3)
+![eq3](images/transfer-qa/eq3.png)
 
 ### Unique Points:
 
