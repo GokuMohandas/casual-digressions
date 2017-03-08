@@ -74,6 +74,8 @@
 
 - [Question Answering through Transfer Learning from Large Fine-grained Supervision Data](notes/transfer-qa.md) [[arXiv](https://arxiv.org/abs/1702.02171)]
 
+- [A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks](notes/joint.md) [[arXiv](https://arxiv.org/abs/1611.01587)]
+
 #### Logic/Reasoning
 
 - [Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks] [[arXiv](https://arxiv.org/abs/1607.01426)]
