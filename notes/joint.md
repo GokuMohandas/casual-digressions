@@ -1,6 +1,6 @@
 ## - [A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks] (https://arxiv.org/abs/1611.01587)
 
-TLDR; The joint many-task model tackles multiple NLP tasks with a single architecture. Tasks are layered such that subsequent and previous tasks benefit from training of the closely-related tasks. Though applied to specific NLP tasks, the propose model introduces a powerful concept for future research.
+TLDR; The joint many-task model tackles multiple NLP tasks with a single architecture. Tasks are layered such that subsequent and previous tasks benefit from training of the closely-related tasks. Though applied to specific NLP objectives, the proposed model introduces a powerful concept for future research.
 
 ### Big Deal:
 
@@ -14,9 +14,9 @@ TLDR; The joint many-task model tackles multiple NLP tasks with a single archite
 
 #### Model:
 
-- For the specific JMT used in the paper for the NLP tasks, both word and n-gram character embeddings were used. Both were learned via the skip-gram objective with negative sampling (for words) and the final representation of each word, x_t, is the concat of the word and character vectors for the word. The n-gram char embeddings were shown to provide morphological information about UNK tokens.
+- For the specific JMT used in the paper for the NLP tasks, both word and n-gram character embeddings were used. Both were learned via the skip-gram objective with negative sampling (for words) and the final representation of each word, x_t, is the concatenation of the word and character vectors for the word. The n-gram char embeddings were shown to provide morphological information for UNK tokens.
 
-- The first task is POS, which also happens to be the only task not to results in SOTA results at the end. A Bi-LSTM is used to process the input sentence and the resulting hidden states are used with softmax to determine the POS tags. So far, the only inputs to the network was the embedded inputs.
+- The first task is POS, which also happens to be the only task not to result in SOTA performance at the end. A Bi-LSTM is used to process the input sentence and the resulting hidden states are used with softmax to determine the POS tags. So far, the only inputs to the network were the embedded inputs.
 
 ![diagram2](images/joint/diagram2.png)
 
@@ -44,11 +44,11 @@ TLDR; The joint many-task model tackles multiple NLP tasks with a single archite
 
 ### Unique Points:
 
-- I was interested to know how layering the tasks would benefit all the different tasks. From the results, it seems that this layered architecture was more important than any model parameters, as it create opportunity for shortcut and vertical connections. All of which allowed for information flow (along both directions) throughout the network for the different tasks. All of the tasks were helping all of the other tasks by altering the representation in such a manner that benefitted everyone's objective and avoided forgetting/interference.
+- I was interested to know how layering the tasks would benefit all the different tasks. From the results, it seems that this layered architecture was more important than any model parameters, as it create opportunity for shortcut and vertical connections. All of which allowed for information flow (along both directions) throughout the network for the different tasks. All of the tasks were helping all of the other tasks by altering the representation in such a manner that benefited everyone's objective and avoided forgetting/interference.
 
-- But, even with all of the preventive measures, are there some types of tasks that can be detrimental and lead to interference. All of the tasks in this paper were quite closely related, so at what disparity does the joint model fall apart.
+- But, even with all of the preventive measures, are there some types of tasks that can be detrimental and lead to interference. All of the tasks in this paper were quite closely related, so at what disparity does the joint model fall apart?
 
-- Also the POS and chunking tasks' representations were used throughout the model. This is because these tasks were able to learn the low level features that will be beneficial for any of the higher level tasks. This leads me to thing about the ordering of the tasks. Is there an optimal structure? If there are two tasks that are quite different, will it be beneficial to process them in parallel and keep the respective representations separated?
+- Also the POS and chunking tasks' representations were used throughout the model. This is because these tasks were able to learn the low level features that will be beneficial for any of the higher level tasks. This leads me to think about the ordering of the tasks. Is there an optimal structure? If there are two tasks that are quite different, will it be beneficial to process them in parallel and keep the respective representations separated?
 
 
 
