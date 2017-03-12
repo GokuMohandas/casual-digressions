@@ -122,12 +122,14 @@
 - [Show, Attend and Tell: Neural Image Caption Generation with Visual Attention](notes/show_attend_tell.md) [[arXiv](https://arxiv.org/abs/1502.03044)]
 
 
-#### Review Papers
+#### Generalization / Interpretabliity
 
 - [Understanding Deep Learning Requires Rethinking Generalization](notes/generalization.md) [[arXiv] (https://arxiv.org/abs/1505.00387)]
 
+- [Making Neural Programming Architecture Generalize Via Recursion](notes/recursion.md) [[OpenReview](https://openreview.net/pdf?id=BkbY4psgg)]
 
-#### Optimization/Architecture
+
+#### Optimization / Architecture
 
 - [Highway Networks] (notes/highway.md) [[arXiv] (https://arxiv.org/abs/1611.03530)]
 
