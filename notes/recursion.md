@@ -42,7 +42,7 @@ TLDR; Neural networks that try to learn programs have very poor generalizability
 
 - Before we dive into the tasks from the paper, let's do a very simple arithmetic problem and see how a sequence is processed. Let's say I want to execute the following:
 
-5 3 + 2 * .
+![eq3](images/recursion/eq3.png)
 
 - First, we push 5 on the stack and then push 3 on top of that. We then add both values (destructively) with 8 and then multiply by 2 to get 16. Now, we can go ahead and define a "word" to execute this operation repeatedly. 
 
