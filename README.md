@@ -128,6 +128,8 @@
 
 - [Making Neural Programming Architecture Generalize Via Recursion](notes/recursion.md) [[OpenReview](https://openreview.net/pdf?id=BkbY4psgg)]
 
+- [Opening the Black Box of Deep Neural Networks via Information](notes/ib.md) [[arXiv](https://arxiv.org/abs/1703.00810)]
+
 
 #### Optimization / Architecture
 
