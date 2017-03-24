@@ -1,4 +1,4 @@
-## - [Opening the Black Box of Deep Neural Networks via Information] (https://arxiv.org/abs/1703.00810)
+## - [Opening the Black Box of Deep Neural Networks via Information](https://arxiv.org/abs/1703.00810)
 
 TLDR; Stochastic gradient descent (SGD) has two unique stages; empirical error minimization (ERM) and representation compression. This paper explores these stages in an attempt to justify the success of deep learning.
 

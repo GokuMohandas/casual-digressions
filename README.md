@@ -2,25 +2,25 @@
 
 #### One Shot Learning
 
-- [Matching Networks for One Shot Learning] (notes/oneshot.md) [[arXiv](https://arxiv.org/abs/1606.04080)]
+- [Matching Networks for One Shot Learning](notes/oneshot.md) [[arXiv](https://arxiv.org/abs/1606.04080)]
 
 #### Recommendation Engines
 
-- [Deep Neural Networks for Youtube Recommendations] (notes/youtube_recommendations.md) [[Google] (https://research.google.com/pubs/pub45530.html)]
+- [Deep Neural Networks for Youtube Recommendations](notes/youtube_recommendations.md) [[Google] (https://research.google.com/pubs/pub45530.html)]
 
 
 #### Representation Learning
 
-- [Doctor AI: Predicting Clinical Events via Recurrent Neural Networks] (notes/docai.md) [[arXiv] (http://arxiv.org/abs/1511.05942)]
+- [Doctor AI: Predicting Clinical Events via Recurrent Neural Networks](notes/docai.md) [[arXiv] (http://arxiv.org/abs/1511.05942)]
 
-- [Distributed Representations of Words and Phrases and their Compositionality] (notes/word2vec_mikolov.md) [[NIPS] (https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)]
+- [Distributed Representations of Words and Phrases and their Compositionality](notes/word2vec_mikolov.md) [[NIPS] (https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)]
 
 - Multi-layer Representation Learning for Medical Concepts [[arXiv] (https://arxiv.org/abs/1602.05568)]
 
 
 #### Text Classification
 
- - [Convolutional Neural Networks for Sentence Classification] (notes/cnn_text.md) [[arXiv] (http://arxiv.org/abs/1408.5882)]
+ - [Convolutional Neural Networks for Sentence Classification](notes/cnn_text.md) [[arXiv] (http://arxiv.org/abs/1408.5882)]
   
  - Recurrent Neural Network Regularization [[arXiv] (http://arxiv.org/abs/1409.2329)]
  
@@ -29,48 +29,48 @@
  
 #### Seq-to-Seq Models (translation)
  
- - [Sequence to Sequence Learning with Neural Networks] (notes/seq_to_seq_rnn.md) [[arXiv] (https://arxiv.org/abs/1409.3215)]
+ - [Sequence to Sequence Learning with Neural Networks](notes/seq_to_seq_rnn.md) [[arXiv] (https://arxiv.org/abs/1409.3215)]
  
- - [Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation] (notes/rnn_encode_decode.md) [[arXiv] (http://arxiv.org/abs/1406.1078)]
+ - [Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation](notes/rnn_encode_decode.md) [[arXiv] (http://arxiv.org/abs/1406.1078)]
  
-- [Neural Machine Translation by Jointly Learning to Align and Translate] (notes/rnn_attention.md) [[arXiv] (http://arxiv.org/abs/1409.0473)] - Attention in RNNs
+- [Neural Machine Translation by Jointly Learning to Align and Translate](notes/rnn_attention.md) [[arXiv] (http://arxiv.org/abs/1409.0473)] - Attention in RNNs
  
-- [On Using Very Large Target Vocabulary for Neural Machine Translation] (notes/rnn_softmax.md) [[arXiv] (http://arxiv.org/abs/1412.2007)] - Sampled Softmax 
+- [On Using Very Large Target Vocabulary for Neural Machine Translation](notes/rnn_softmax.md) [[arXiv] (http://arxiv.org/abs/1412.2007)] - Sampled Softmax 
 
-- [Pointer Sentinel Mixture Models] (notes/pointer_sentinel.md) [[arXiv](https://arxiv.org/abs/1609.07843)]
+- [Pointer Sentinel Mixture Models](notes/pointer_sentinel.md) [[arXiv](https://arxiv.org/abs/1609.07843)]
 
-- [Context-Dependent Word Representation for Neural Machine Translation] (notes/context.md) [[arXiv](https://arxiv.org/abs/1607.00578)]
+- [Context-Dependent Word Representation for Neural Machine Translation](notes/context.md) [[arXiv](https://arxiv.org/abs/1607.00578)]
 
-- [Learning to Translate in Real-time with Neural Machine Translation] (notes/real_time_NMT.md) [[arXiv](https://arxiv.org/abs/1610.00388)]
+- [Learning to Translate in Real-time with Neural Machine Translation](notes/real_time_NMT.md) [[arXiv](https://arxiv.org/abs/1610.00388)]
 
-- [Fully Character-Level Neural Machine Translation without Explicit Segmentation] (notes/fully_char.md) [[arXiv](https://arxiv.org/abs/1610.03017)]
+- [Fully Character-Level Neural Machine Translation without Explicit Segmentation](notes/fully_char.md) [[arXiv](https://arxiv.org/abs/1610.03017)]
 
 
 #### Neural Conversation Models / QA
 
- - [A Neural Conversational Model] (notes/conversation.md) [[arXiv] (http://arxiv.org/abs/1506.05869)]
+ - [A Neural Conversational Model](notes/conversation.md) [[arXiv] (http://arxiv.org/abs/1506.05869)]
  
  - End-To-End Memory Networks [[arXiv](https://arxiv.org/abs/1503.08895)]
  
-- [Ask Me Anything: Dynamic Memory Networks for Natural Language Processing] (notes/ama.md) [[arXiv](https://arxiv.org/abs/1506.07285)]
+- [Ask Me Anything: Dynamic Memory Networks for Natural Language Processing](notes/ama.md) [[arXiv](https://arxiv.org/abs/1506.07285)]
  
-- [Dynamic Memory Networks for Visual and Textual Question Answering] (notes/visual_qa.md) [[arXiv](https://arxiv.org/abs/1603.01417)] 
+- [Dynamic Memory Networks for Visual and Textual Question Answering](notes/visual_qa.md) [[arXiv](https://arxiv.org/abs/1603.01417)] 
  
-- [Dynamic Coattention Networks For Question Answering] (notes/coattention.md) [[arXiv](https://arxiv.org/abs/1611.01604)]
+- [Dynamic Coattention Networks For Question Answering](notes/coattention.md) [[arXiv](https://arxiv.org/abs/1611.01604)]
 
-- [Richard Socher on the Future of Deep Learning] (notes/future_socher.md) [[OReilly](https://www.oreilly.com/ideas/richard-socher-on-the-future-of-deep-learning)]
+- [Richard Socher on the Future of Deep Learning](notes/future_socher.md) [[OReilly](https://www.oreilly.com/ideas/richard-socher-on-the-future-of-deep-learning)]
 
 - [A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks][[arXiv](https://arxiv.org/abs/1611.01587)]
 
 - [Bidirectional Attention Flow for Machine Comprehension](notes/bidaf.md)  [[arXiv](https://arxiv.org/abs/1611.01603)]
 
-- [Generating Long and Diverse Responses with Neural Conversation Models] (notes/diverse.md) [[arXiv](https://openreview.net/pdf?id=HJDdiT9gl)]
+- [Generating Long and Diverse Responses with Neural Conversation Models](notes/diverse.md) [[arXiv](https://openreview.net/pdf?id=HJDdiT9gl)]
 
-- [Gated-Attention Readers for Text Comprehension] (notes/ga.md) [[arXiv](https://arxiv.org/abs/1606.01549)]
+- [Gated-Attention Readers for Text Comprehension](notes/ga.md) [[arXiv](https://arxiv.org/abs/1606.01549)]
 
-- [FVQA: Fact based Visual Question Answering] (notes/fvqa.md) [[arXiv](https://arxiv.org/abs/1606.05433)]
+- [FVQA: Fact based Visual Question Answering](notes/fvqa.md) [[arXiv](https://arxiv.org/abs/1606.05433)]
 
-- [Query-Reduction Networks for Question Answering] (notes/qrn.md) [[arXiv](https://arxiv.org/abs/1606.04582)]
+- [Query-Reduction Networks for Question Answering](notes/qrn.md) [[arXiv](https://arxiv.org/abs/1606.04582)]
 
 - [Question Answering through Transfer Learning from Large Fine-grained Supervision Data](notes/transfer-qa.md) [[arXiv](https://arxiv.org/abs/1702.02171)]
 
@@ -99,14 +99,14 @@
 
 #### Neural Turing Machines
 
-- [Neural Turing Machines] (notes/ntm.md) [[arXiv] (http://arxiv.org/abs/1410.5401)]
+- [Neural Turing Machines](notes/ntm.md) [[arXiv] (http://arxiv.org/abs/1410.5401)]
 
 - [Hybrid Computing using a Neural Network with Dynamic External Memory] [[Nature](https://goo.gl/8T4EST)]
 
 
 #### Generative Adversarial Networks
 
-- [Generative Adversarial Networks] (notes/GAN.md) [[arXiv] (https://arxiv.org/abs/1406.2661)]
+- [Generative Adversarial Networks](notes/GAN.md) [[arXiv] (https://arxiv.org/abs/1406.2661)]
 
 -  [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](notes/dcgan.md) [[arXiv](http://arxiv.org/abs/1511.06434v2)]
 
@@ -133,11 +133,11 @@
 
 #### Optimization / Architecture
 
-- [Highway Networks] (notes/highway.md) [[arXiv] (https://arxiv.org/abs/1611.03530)]
+- [Highway Networks](notes/highway.md) [[arXiv] (https://arxiv.org/abs/1611.03530)]
 
 - [Maxout Networks] [[arXiv](https://arxiv.org/abs/1302.4389)]
 
-- [HyperNetworks] (notes/hypernetworks.md) [[arXiv] (https://arxiv.org/abs/1609.09106)]
+- [HyperNetworks](notes/hypernetworks.md) [[arXiv] (https://arxiv.org/abs/1609.09106)]
 
 - [Using Fast Weights to Attend to the Recent Past] (notes/fast_weights.md) [[arXiv] (https://arxiv.org/abs/1610.06258)]
 
@@ -153,5 +153,5 @@
 
 - [Adding Gradient Noise Improves Learning for Very Deep Networks] [[arXiv](https://arxiv.org/abs/1511.06807)]
 
-- [Outrageously Large Neural Networks: The Sparsely-gated Mixture-of-Experts Layer] [[Open Review](https://openreview.net/pdf?id=B1ckMDqlg)]
+- Outrageously Large Neural Networks: The Sparsely-gated Mixture-of-Experts Layer [[Open Review](https://openreview.net/pdf?id=B1ckMDqlg)]
 
