@@ -6,7 +6,7 @@ TLDR; Stochastic gradient descent (SGD) has two unique stages; empirical error m
 
 - It's easy to see how DNNs form a Markov chain, so the paper explores viewing DNNs with an information lens. We can consider each component in the network via an information plane, which holds the mutual information of a given variable with the input variable X and the output variable y. 
 
-![diagram1](images/ib/diagram1.png)
+![diagram1](images/ib/diagram_1.png)
 
 - The main goal of our DNNs is to learn a representation of the input data using some samples from a joint distribution P(X,Y) and then being able to generalize well to unseen samples. But why do we need to compress our input data? We can easily create large enough DNNs to completely memorize any given training data but then we will not be able to generalize well. By compressing our input data, with respect to the training error constraint, we are effectively learning the useful aspects of the inputs that are key for good prediction and generalization.
 
