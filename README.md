@@ -155,3 +155,5 @@
 
 - Outrageously Large Neural Networks: The Sparsely-gated Mixture-of-Experts Layer [[Open Review](https://openreview.net/pdf?id=B1ckMDqlg)]
 
+- [Overcoming Catastrophic Forgetting in Neural Networks](notes/catastrophic_forgetting.md) [[arXiv](https://arxiv.org/abs/1612.00796)]
+
