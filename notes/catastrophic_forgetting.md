@@ -28,7 +28,7 @@ Note: I will cover earlier approaches to combat catastrophic forgetting first an
 
 - Let's say we have two tasks: A and B. How do we determine which weights are most important to task A? And by how much do we slow down the learning for the weights? To answer these questions, we need to think about the learning process. Learning involves find parameters (\theta) that allow us to optimize on some objective. One key fact we need to consider is that there exists many combinations of \theta that give us the same optimal performance. This is good news because now we can find some configuration that gives us the best performance for both task A and B. This means that when we train task B, we will need to constrain the parameters such that they still produce a small error for task A. EWC employs a quadratic error as the constraint, as we will see the in the overall loss expression. 
 
-- But before determining the loss, we need to figure out how we are going to weigh the parameters such that the weights that are important to task A are less prone to change. But if task B does involves changing these key weights, then there will be a penalty. We can solve this by thinking in a probabilistic perspective.
+- But before determining the loss, we need to figure out how we are going to weigh the parameters such that the weights that are important to task A are less prone to change. But if task B does involves changing these key weights, then there will be a penalty. We can solve this by thinking in a probabilistic perspective. Instead of finding the optimal weights (\theta) using gradient descent, we can now use Bayesian posterior distributions over the weights that worked well for previous tasks. When we solve the new task (i+1), we update the posterior to account for all tasks thus far (task 1 to i+1). 
 
 ![diagram1](images/catastrophic_forgetting/diagram1.png)
 
@@ -44,9 +44,11 @@ Note: I will cover earlier approaches to combat catastrophic forgetting first an
 
 ![eq3](images/catastrophic_forgetting/eq3.png)
 
-- So now our total loss looks like the following expression. The Fisher matrix allows us to account for the parameters that were most important to task A. And the quadratic term allows us to penalize if we decide to shift the weights that were key performers for task A. This loss allows us to find that balanced configuration that offers great performance for both task A and B. 
+- So now our total loss looks like the following expression. The Fisher matrix allows us to account for the parameters that were most important to task A. And the quadratic term allows us to penalize if we decide to shift the weights that were key performers for task A. This loss allows us to find that balanced configuration that offers great performance for both task A and B. Note: we only use the diagonal values from the Fisher information matrix which means that we assume each parameter as independent components for the overall loss (diagonal laplace approximate).
 
 ![eq4](images/catastrophic_forgetting/eq4.png)
+
+![diagram2](images/catastrophic_forgetting/diagram2.jpg)
 
 ### Thoughts:
 
