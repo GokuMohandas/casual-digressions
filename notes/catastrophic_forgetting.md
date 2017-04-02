@@ -48,7 +48,7 @@ Note: I will cover earlier approaches to combat catastrophic forgetting first an
 
 ![eq4](images/catastrophic_forgetting/eq4.png)
 
-![diagram2](images/catastrophic_forgetting/diagram2.jpg)
+![diagram2](images/catastrophic_forgetting/diagram2_1.png)
 
 ### Thoughts:
 
