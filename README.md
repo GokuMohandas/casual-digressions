@@ -76,6 +76,8 @@
 
 - [A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks](notes/joint.md) [[arXiv](https://arxiv.org/abs/1611.01587)]
 
+- [Question Answering from Unstructured Text by Retrieval and Comprehension](notes/retrieval.md) [[arXiv](https://arxiv.org/abs/1703.08885)]
+
 #### Logic/Reasoning
 
 - [Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks] [[arXiv](https://arxiv.org/abs/1607.01426)]
