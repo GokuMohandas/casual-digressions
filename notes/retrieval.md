@@ -52,7 +52,7 @@ The questions themselves can also be split into 13 categories so we can see how 
 
 - Now that we retrieved the set of relevant contexts, we need to comprehend and answer the query. All of the relevant contexts are combined together and then processed.
 
-![intro](images/retrieval/comprehension)
+![intro](images/retrieval/comprehension.png)
 ![intro](images/retrieval/eq2.png)
 
 - Similar to retrieval processing, the context is embedded and fed into a BI-GRU and is combined via attention with the query representations. Each word in the context now has a query aware attention score.
