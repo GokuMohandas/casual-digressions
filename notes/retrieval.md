@@ -80,7 +80,7 @@ The questions themselves can also be split into 13 categories so we can see how 
 
 - Recurring theme of query-aware attention was used when processing contexts.
 
-- Mixture model is a cool idea and seems quite similar to Stephen Merity's [pointer sentinel](https://arxiv.org/abs/1609.07843) paper (with perspective of combining two probabilities with a mixture coefficient). 
+- Mixture model is a cool idea and seems quite similar to Stephen Merity's [Pointer Sentinel Mixture Modelsl](https://arxiv.org/abs/1609.07843) paper (with perspective of combining two probabilities with a mixture coefficient). 
 
 
 
