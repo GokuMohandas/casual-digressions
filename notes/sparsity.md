@@ -1,5 +1,11 @@
 ## [Exploring Sparsity in Recurrent Neural Networks](https://arxiv.org/abs/1704.05119)
 
+```
+Exploring Sparsity in Recurrent Neural Network
+Sharan Narang, Greg Diamos, Shubho Sengupta?& Erich Elsen
+https://arxiv.org/abs/1704.05119
+```
+
 TLDR; Reduce number of parameters in your large recurrent models while maintaining high performance.
 
 ### Synopsis
