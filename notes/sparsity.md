@@ -3,7 +3,7 @@
 TLDR; Reduce number of parameters in your large recurrent models while maintaining high performance.
 
 ### Synopsis
-	The issue is that large models are hard to deploy on embedded devices/ mobile phones. Even if your inference speed is acceptable, these large models can still affect your battery life on devices. The proposed solution is to reduce the number of parameters in models by pruning (zeroing) weights during the initial training period. Also with fewer parameters, you can store them in cache for [super-linear](http://blog.sflow.com/2010/09/superlinear.html) increase in performance. 
+The issue is that large models are hard to deploy on embedded devices/ mobile phones. Even if your inference speed is acceptable, these large models can still affect your battery life on devices. The proposed solution is to reduce the number of parameters in models by pruning (zeroing) weights during the initial training period. Also with fewer parameters, you can store them in cache for [super-linear](http://blog.sflow.com/2010/09/superlinear.html) increase in performance. 
 
 #### Results:
 	1. Network size decreases ~90%
@@ -12,10 +12,10 @@ TLDR; Reduce number of parameters in your large recurrent models while maintaini
 	4. Maintain accuracy
 
 #### Drawbacks:
-	Going from a dense representation of our weights to sparse does have a penalty but it can be overcome once the sparsity factor (%) is large enough. 
+Going from a dense representation of our weights to sparse does have a penalty but it can be overcome once the sparsity factor (%) is large enough. 
 
 #### Method details:
-	While our network is training, more and more weights are set to zero based on a `monotonically increasing threshold`. Each layer can have its own threshold function but this paper allows each type of layer (recurrent, FC, etc.) to share the threshold function. Similar to dropout, we use Bernoulli masks where each weight has a mask value (0 or 1). At the start of training, all values in the mask are one and once the pruning begins, the masks are updated by zeroing the mask values below the threshold. The threshold is initialized and updated with pruning hyper-parameters.
+While our network is training, more and more weights are set to zero based on a `monotonically increasing threshold`. Each layer can have its own threshold function but this paper allows each type of layer (recurrent, FC, etc.) to share the threshold function. Similar to dropout, we use Bernoulli masks where each weight has a mask value (0 or 1). At the start of training, all values in the mask are one and once the pruning begins, the masks are updated by zeroing the mask values below the threshold. The threshold is initialized and updated with pruning hyper-parameters.
 
 ![table1](images/sparsity/table1.png)
 
