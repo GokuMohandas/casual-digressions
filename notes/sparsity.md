@@ -33,10 +33,10 @@ while self.training:
         if (current_itr > start_itr) and (current_itr < end_itr):
             if (current_itr % freq == 0):
                 if (current_itr < ramp_itr):
-                    e = theta * (current_itr ? start_itr + 1)/freq
+                    e = theta * (current_itr - start_itr + 1)/freq
                 else:
-                    e = (theta * (ramp_itr ? start_itr + 1) + \
-                         phi * (current_itr ? ramp_itr + 1))/freq
+                    e = (theta * (ramp_itr - start_itr + 1) + \
+                         phi * (current_itr - ramp_itr + 1))/freq
                 masks[i] = abs(param) > e
     current itr += 1
     ...
