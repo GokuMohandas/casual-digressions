@@ -159,3 +159,5 @@
 
 - [Overcoming Catastrophic Forgetting in Neural Networks](notes/catastrophic_forgetting.md) [[arXiv](https://arxiv.org/abs/1612.00796)]
 
+- [Exploring Sparsity in Recurrent Neural Networks](notes/sparsity.md) [[arXiv](https://arxiv.org/abs/1704.05119)]
+
