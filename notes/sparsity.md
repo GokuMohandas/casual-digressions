@@ -27,9 +27,11 @@ While our network is training, more and more weights are set to zero based on a 
 params = [model.fc1.weight.data, ..., ]
 masks = [torch.ones(param.size()) for param in params]
 current_itr = 0
+
 while self.training:
     for i, param in enumerate(params):
         param = (param and masks[i]) # apply mask
+        
         if (current_itr > start_itr) and (current_itr < end_itr):
             if (current_itr % freq == 0):
                 if (current_itr < ramp_itr):
@@ -37,7 +39,10 @@ while self.training:
                 else:
                     e = (theta * (ramp_itr - start_itr + 1) + \
                          phi * (current_itr - ramp_itr + 1))/freq
+                 
+                # update the mask         
                 masks[i] = abs(param) > e
+                
     current itr += 1
     ...
 
@@ -48,6 +53,7 @@ while self.training:
 
 ### Results:
 ![results1](images/sparsity/results1.png)
+![results1](images/sparsity/results2.png)
 
 ### Unique points:
 - Gradual pruning works better than hard pruning which is zeroing the parameters at the end of particular epochs. Gradual pruning results in 7%-9% better performance (for Deep Speech 2).
