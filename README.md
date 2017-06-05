@@ -8,7 +8,6 @@
 
 - [Deep Neural Networks for Youtube Recommendations](notes/youtube_recommendations.md) [[Google] (https://research.google.com/pubs/pub45530.html)]
 
-
 #### Representation Learning
 
 - [Doctor AI: Predicting Clinical Events via Recurrent Neural Networks](notes/docai.md) [[arXiv] (http://arxiv.org/abs/1511.05942)]
@@ -16,6 +15,10 @@
 - [Distributed Representations of Words and Phrases and their Compositionality](notes/word2vec_mikolov.md) [[NIPS] (https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)]
 
 - Multi-layer Representation Learning for Medical Concepts [[arXiv] (https://arxiv.org/abs/1602.05568)]
+
+- [Poincare Embeddings for Learning Hierarchical Representations](notes/poincare.md) [[arXiv](https://arxiv.org/abs/1705.08039)]
+
+- [Learning to Compute Word Embeddings On the Fly](notes/poincare.md) [[arXiv](https://arxiv.org/abs/1706.00286)]
 
 
 #### Text Classification

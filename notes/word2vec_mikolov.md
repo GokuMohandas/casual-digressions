@@ -6,11 +6,11 @@ TLDR; We can represent words as one hot encoded vectors but these hold none of t
 
 - Skip-gram model is about predicting context words from a target word. 
 
-![Skipgram objective] (images/word2vec/skipgram.png)
+![Skipgram objective](images/word2vec/skipgram.png)
 
 - The objective of the skipgram model is:
 
-![Skipgram objective] (images/word2vec/skipgram_eq.png)
+![Skipgram objective](images/word2vec/skipgram_eq.png)
 
 where:
 
@@ -20,7 +20,7 @@ where:
 
 - To decide how to subsample, we use the probability discard formula below. t is usually 10^-5. and f is the frequency of the word. Frequency is occurances of word / all occurances of every word, so a high frequency word will have a high value P, which is the discard probability. (discard from subsampling). We dont want to subsample the high frequency words because their embeddings don't change much because they are always used with almost every word. 
 
-![Subsampling] (images/word2vec/subsampling.png)
+![Subsampling](images/word2vec/subsampling.png)
 
 
 ### Training Points:
@@ -31,5 +31,5 @@ where:
 
 - To deal with phrases like 'New York' which are two separate words, we can use the formula below to identify the phrase words. If the score is above a threshold, the two words form a phrase (bigram). We can do 2-4 passes on the data which allows us to form even longer phrases. 
 
-![Phrase] (images/word2vec/phrase.png)
+![Phrase](images/word2vec/phrase.png)
 
