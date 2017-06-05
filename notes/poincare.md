@@ -46,7 +46,7 @@ Method:
 
 	We can either create the embeddings using mean pooling or the last state of an LSTM as f. Once we have the embeddings, we have several options for how we want to use them. We can 1.) We can combine them with the pretrained embeddings (sum) or conditionally add them together e = e(pretrained) + W(e(on the fly)) where W is a trainable set of weights. We could also just use them where we would traditionally use the UNK token. 
 	
-![diagram1](images/poincare/math1.png)
+![diagram1](images/poincare/diagram1.png)
 
 Where does this really benefit me?
 	Any case where there is an extended long tail such as in technical writing where we have many rare terms but auxiliary information is available.
@@ -54,6 +54,6 @@ Where does this really benefit me?
 Evaluation:
 	Since there are no preexisting NN-based baselines of testing the method, performance on different tasks was used to determine its usefulness. There was quite a performance boost for question answering, entailment prediction and language modeling. The Q/A task was quite interesting but I would have liked the performance on a task where the answer is not from a continuos sub-span like MS-MARCO. More details are in section 4.
 
-So what do we think about ?On the fly? Poincare embeddings?
+So what do we think about "On the fly" Poincare embeddings?
 
 
